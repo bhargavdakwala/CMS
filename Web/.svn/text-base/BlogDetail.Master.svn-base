@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BlogDetail.master.cs" Inherits="Etech.CMS.Web.BlogDetail" %>
+
+<%@ Register TagPrefix="CMS" TagName="TopMenu" Src="~/controls/navigation/submenuNavigation.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AnonymousUser" Src="~/controls/authentication/anonymoususer.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AuthenticatedUser" Src="~/controls/authentication/authenticateduser.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="FooterMenu" Src="~/controls/navigation/FooterNavigation.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head1" runat="server">
+    <meta runat="Server" name="keywords" id="KeywordsTag" />
+    <meta runat="Server" name="description" id="DescriptionTag" />
+    <meta runat="Server" name="generator" id="GeneratorTag" />
+    <meta runat="Server" name="robots" id="robots" content="index, follow" />
+    <meta runat="server" name="revisit-after" id="revisitafter" content="7 days" />
+    <meta runat="Server" name="author" id="author" content="iSolutions Technology" />
+    <meta runat="Server" name="distribution" id="distribution" content="global" />
+    <meta runat="Server" name="language" id="language" content="english" />
+    <meta runat="Server" name="copyright" id="CopyrightTag" content="© Copyright MTM Physio 2012. All rights reserved" />
+    <link href="App_Themes/SiteTheme/site.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <link rel="shortcut icon" href="images/mtmphysio.ico" />
+
+    
+    <link href="http://www.mtmphysio.com.au/controls/content/styles/1col.css" rel="stylesheet" type="text/css" />
+    <%--<link href="http://www.mtmphysio.com.au/controls/content/styles/2colmainright.css" rel="stylesheet" type="text/css" />--%>
+
+    <link href="http://www.mtmphysio.com.au/App_Themes/SiteTheme/site.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript">
+
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22288180-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+        })();
+    </script>
+</head>
+<body style="background: none;">
+    <form id="form1" runat="server" class="wrap">
+    <asp:ScriptManager ID="scriptManager" runat="server" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    <!--hearder start-->
+    <div class="header floatLeft">
+        <!--inner warp - header start-->
+        <div class="innerWarp">
+            <div class="logo floatLeft">
+                <a href="Home.aspx">
+                    <img src="http://www.mtmphysio.com.au/images/mtm_logo.jpg" alt="" /></a></div>
+            <div class="hearder_right floatRight">
+                <div class="socialMedia floatRight">
+                    <a href="http://www.facebook.com/?ref=logo#!/pages/MTM-Physio-Duncraig/174919205910476"
+                        target="_blank" class="facebook"></a><a href="#" class="tweeter" target="_blank">
+                    </a><a href="http://www.linkedin.com/company/2462310?goback=%2Efcs_GLHD_mtm+physio"
+                        target="_blank" class="in"></a><a href="#" target="_blank" class="youtube"></a>
+                </div>
+                <div class="floatRight">
+                    <span style="color: #a6d2d0; float: left; font-size: 19px; margin-top: 10px;">contact
+                        us today </span><span style="font-size: 26px; float: left; margin-top: 10px; margin-left: 10px;">
+                            9246 4066</span></div>
+                <div class="clearBoth">
+                </div>
+                <div class="menu">
+                    <CMS:TopMenu ID="topMenu" runat="server" />
+                </div>
+            </div>
+        </div>
+        <!--inner warp - header end-->
+    </div>
+    <!--hearder end-->
+    <%-- <div class="banner">
+        <img src="images/banner01.jpg" alt="" /></div>--%>
+    <div id="Div1" class="banner" runat="server">
+        <div class="bannerLeft floatLeft">
+            <img src="http://www.mtmphysio.com.au/images/banner_left_paft.jpg" alt="" /></div>
+        <div id="myslides" class="bannerRight floatLeft">
+            <img id="imgBanner" src="http://localhost:3467/images/MTM_Blog.jpg" alt="" runat="server" />
+        </div>
+    </div>
+    <!--  contentArea start-->
+    <div class="contentArea">
+        <!--inner warp start-->
+        <div class="innerWarp">
+            <!-- main content start-->
+            <!-- InstanceBeginEditable name="maincontent" -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- InstanceEndEditable -->
+            <!-- main content end-->
+        </div>
+        <!--inner warp end-->
+    </div>
+    <div class="clearBoth">
+    </div>
+    <!--  contentArea end-->
+    <div class="footer">
+        <div class="borderWhite">
+        </div>
+        <div class="innerWarp">
+            <div class="sitemap floatLeft">
+                <h2>
+                    Site Map</h2>
+                <CMS:FooterMenu ID="footerMenu" runat="server" />
+            </div>
+            <div class="contact floatLeft">
+                <h2>
+                    Contact Us</h2>
+                <div class="border_bottom">
+                    <strong>MTM Made to Move</strong><br />
+                    Suite 1, 64 Arnisdale Road,<br />
+                    Duncraig, Western Australia 6023<br />
+                    <br />
+                    <strong>T</strong> (08) 9246 4066
+                    <br />
+                    <strong>F</strong> (08) 9246 4200
+                    <br />
+                    <strong>E</strong> admin@mtmphysio.com.au
+                    <br />
+                </div>
+                <span style="margin-top: 8px; float: left;">&copy; MTM Physio 2012</span>
+            </div>
+            <div class="follow floatLeft">
+                <h2>
+                    Follow Us</h2>
+                <div class="socialMedia floatLeft border_bottom" style="margin-left: -5px;">
+                    <a href="http://www.facebook.com/?ref=logo#!/pages/MTM-Physio-Duncraig/174919205910476"
+                        target="_blank" class="facebook"></a><a href="#" class="tweeter"></a><a href="http://www.linkedin.com/company/2462310?goback=%2Efcs_GLHD_mtm+physio"
+                            class="in" target="_blank"></a><a href="#" class="youtube"></a>
+                </div>
+                <div class="floatLeft" style="margin: 15px 0px 0px 0px;">
+                    Website developed by
+                    <div style="margin: 10px 0px">
+                        <a href="http://www.isolutionstechnology.com.au/" target="_blank">
+                            <img src="http://www.mtmphysio.com.au/images/ist_logo.jpg" alt="" /></a></div>
+                    <a href="http://www.isolutionstechnology.com.au/perth-website-designer/web-overview.aspx"
+                        target="_blank">Perth Web Designers</a>
+                    <br />
+                    <a href="http://www.isolutionstechnology.com.au/perth-website-designer/search-engine-optimisation-overview.aspx"
+                        target="_blank">Perth SEO</a> | <a href="http://www.isolutionstechnology.com.au/perth-website-products/perth-web-hosting.aspx"
+                            target="_blank">Perth Web Hosting</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

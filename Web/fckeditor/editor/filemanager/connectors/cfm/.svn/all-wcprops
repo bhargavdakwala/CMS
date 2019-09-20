@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm
+END
+cf_upload.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf_upload.cfm
+END
+ImageObject.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/ImageObject.cfc
+END
+cf_io.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf_io.cfm
+END
+cf5_upload.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf5_upload.cfm
+END
+cf_connector.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf_connector.cfm
+END
+cf_basexml.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf_basexml.cfm
+END
+upload.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/upload.cfm
+END
+cf_util.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf_util.cfm
+END
+config.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/config.cfm
+END
+cf5_connector.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf5_connector.cfm
+END
+image.cfc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/image.cfc
+END
+cf_commands.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/cf_commands.cfm
+END
+connector.cfm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/cfm/connector.cfm
+END

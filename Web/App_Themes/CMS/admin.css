@@ -1,0 +1,1118 @@
+/* CSS Document */
+
+html, body
+{
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font: normal 12px Verdana, Helvetica, sans-serif;
+	color: #2b2b2b;
+}
+
+
+
+.floatLeft
+{
+	position: relative;
+	float: left;
+	width: auto;
+}
+.floatRight
+{
+	position: relative;
+	float: right;
+	width: auto;
+}
+.clearBoth
+{
+	clear: both;
+}
+
+
+h1, h2, h3, h4, h5, h6, .errorMsg
+{
+	font-family: "Trebuchet MS" , Verdana, Helvetica, sans-serif;
+/*	color: #2b2b2b;*/
+}
+h2 .subTitle
+{
+	font-size: 18px;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 18px;
+}
+
+form
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	min-height: 100%;
+	position: relative;
+	padding-bottom: 0px;
+}
+
+#mainWrap
+{
+	position: relative;
+	min-height: 100%; /*border:1px solid green;*/
+}
+
+
+
+.innerWrap
+{
+	width: 943px;
+	margin: auto;
+	position: relative;
+	padding: 0px 20px;
+}
+
+
+/* _____________________________ Header Start ______________________________*/
+
+#header
+{
+	height: 120px;
+	background-color: #2b2b2b; /*background-color:#157797;*/
+	border-bottom: 10px solid #157797;
+}
+
+#header, #mainMenu, #mainMenu a
+{
+	color: #fff;
+	font: bold 12px "Trebuchet MS" , Verdana, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+/* _______________ project name __________________*/
+#header .proPunchLine
+{
+	font-size: 12px;
+	font-weight: normal;
+	display: block;
+	text-transform: lowercase;
+}
+
+#header .proName
+{
+	font-size: 36px;
+	text-transform:inherit;
+	line-height: 22px;
+	padding: 16px 10px 5px 0px;
+	margin: 24px 0 0 0;
+	display: block;
+}
+
+
+/* _______________ project link __________________*/
+
+#header .viewProject
+{
+	color: #000;
+	/*font: 14px;*/
+	text-decoration: none;
+	height: 10px;
+	font-size:14px;
+}
+
+#header .viewProject span
+{
+	background-image: url(images/admin-bg.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	display: block;
+	padding: 8px 16px 8px 10px;
+	margin-top: 35px;
+}
+#header .viewProject span.left
+{
+	width: 6px;
+	padding: 0;
+	height: 10px;
+	background-position: left -1246px;
+}
+#header .viewProject span.right
+{
+	background-position: right -1246px;
+}
+#header .viewProject:hover span.left
+{
+	background-position: left -1204px;
+}
+#header .viewProject:hover span.right
+{
+	background-position: right -1204px;
+}
+
+/* _______________ user info __________________*/
+
+#header .userInfo
+{
+	width: 283px;
+	height: 89px;
+	background: url(images/admin-bg.png) no-repeat right top;
+	font-weight: normal;
+	margin: 15px;
+}
+#header .userInfo, #header .userInfo .links a
+{
+	color: #909090;
+	text-decoration: none;
+}
+#header .userInfo .links a:hover
+{
+	text-decoration: underline;
+}
+
+#header .userInfo strong
+{
+	color: #fff;
+	font-size: 14px;
+}
+
+#header .userInfo .userName
+{
+	margin: 16px 20px 8px 108px;
+	line-height: 16px;
+}
+
+#header .userInfo .links
+{
+	margin: 14px 20px 8px 108px;
+	text-align: right;
+}
+
+/* _____________________________ Header End ______________________________*/
+
+
+/* _____________________________ Main Menu Start _______________________________*/
+
+#mainMenu
+{
+	height: 44px;
+	background: url(../images/admin-bg.png) left -1141px;
+	padding: 5px 0;
+}
+#mainMenu ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#mainMenu ul li
+{
+	display: inline;
+}
+
+#mainMenu ul li a
+{
+	display: block;
+	float: left; /*padding:13px 16px;*/
+	border-radius: 6px;
+}
+/*#mainMenu ul li a:hover { 
+				background-color:orange; 
+				background: -moz-linear-gradient(100% 100% 90deg, #2F2727, #1a82f7);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+				color:#000; 
+				text-shadow: 0 0 5px #fcee9e;  
+			}*/
+
+
+
+#mainMenu ul li a span
+{
+	background-image: url(../images/admin-bg.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	display: block;
+	padding: 13px 16px 13px 10px;
+}
+#mainMenu ul li a span.left
+{
+	width: 6px;
+	padding: 0;
+	height: 42px; /*background-position:left -1009px;*/
+}
+#mainMenu ul li a span.right
+{
+	/*background-position:right -1009px;*/
+}
+#mainMenu ul li a:hover span.left
+{
+	background-position: left -1009px;
+}
+#mainMenu ul li a:hover span.right
+{
+	background-position: right -1009px;
+	color: #000;
+	text-shadow: 0 0 5px #fcee9e;
+}
+
+
+
+/* _______________________________ Search Box Start ______________________________________*/
+
+.searchBox
+{
+	/*width:200px;*/
+	margin: 7px 0;
+}
+.searchBox input
+{
+	background: url(../images/admin-bg.png) no-repeat -14px -1085px;
+	padding: 7px;
+	width: 150px;
+	border: none;
+	color: #70a2ba;
+}
+.searchBox input:focus
+{
+	color: #fff;
+}
+.searchBox input.btnSearch
+{
+	height: 28px;
+	width: 40px;
+	background-position: -295px -1085px;
+	cursor: pointer;
+}
+
+/* _______________________________ Search Box End ______________________________________*/
+
+
+/* _____________________________ Main Menu Start _______________________________*/
+
+
+
+/*______________________________ Content start ___________________________*/
+
+/*.content
+{
+	padding: 0px 30px 100px 30px;
+}
+.content h1
+{
+	font-size: 30px;
+	border-bottom: 1px solid #cfcfcf;
+	padding: 20px 0;
+	margin: 0 0 10px 0;
+}
+*/
+
+/*______________________________ Left Panel Start ______________________________*/
+.leftPanel
+{
+	width: 232px;
+	margin-right: 10px;
+}
+.leftPanel .leftTitle
+{
+	background: url(images/admin-bg.png) no-repeat right -584px;
+	font: bold 12px "Trebuchet MS" , Verdana, Helvetica, sans-serif;
+	color: #fff;
+	padding: 10px 15px;
+	
+}
+.leftPanel .leftMenu
+{
+	padding: 0 0 10px 0;
+	margin-bottom: 10px;
+}
+.leftPanel .leftMenu ul
+{
+	/*margin: 10px 15px;*/
+	margin: 10px 10px;
+	padding: 0;
+	list-style: none;
+}
+.leftPanel .leftMenu ul li
+{
+	border-bottom: 1px solid #e9e9e9;
+}
+.leftPanel .leftMenu ul li a
+{
+	color: #2b2b2b;
+	display: block;
+	padding: 5px 0 5px 22px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+.leftPanel .leftMenu ul li a:hover
+{
+	color: #1b73d6;
+}
+
+.leftPanel .leftMenu ul li ul
+{
+	margin: 0 0 0 30px;
+}
+.leftPanel .leftMenu ul li ul li
+{
+	border-bottom: none;
+}
+.leftPanel .leftMenu ul li ul li a
+{
+	color: #6a6a6a;
+	display: block;
+	padding: 5px 0;
+	font-weight: normal;
+	text-decoration: none;
+}
+.leftPanel .leftMenu ul li ul li a:hover
+{
+	color: #000;
+}
+
+.grayList
+{
+	background-color: #e9e9e9;
+	padding-bottom: 10px;
+}
+.grayList p
+{
+	margin: 5px 12px 12px 12px;
+	color: #646464;
+	font-size: 11px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.grayList p span
+{
+	color: #2b2b2b;
+	display: block;
+	font-size: 12px;
+	padding: 5px 0;
+}
+
+
+
+
+
+/*______________________________ Left Panel End ______________________________*/
+
+/*______________________________ Middle Panel Start ______________________________*/
+.middlePanel
+{
+	width: 701px;
+}
+
+.tabPanel, .panelBdr
+{
+	border: 1px solid #dfdfdf;
+	margin-bottom: 10px;
+}
+	.panel 
+	{
+		margin-bottom: 10px;
+		margin-left:20px;
+	}
+
+
+/*.panel .panelTitle
+		{
+			background:url(images/admin-bg.png) no-repeat left -689px;
+			font:bold 12px "Trebuchet MS", Verdana, Helvetica, sans-serif;
+			color:#fff;
+			height:18px;
+			padding:10px;
+		}*/
+.panel .panelTitle, .panelBdr .panelTitle
+{
+	font: bold 18px "Trebuche MS" , Verdana, Helvetica, sans-serif;
+	color: #157797;
+	margin: 10px 10px 0 10px; 
+	/*border-bottom:1px solid #fff;
+ 			float:left;
+ 			background-color:#157797;
+ 			padding:3px;
+    */
+}
+
+.panel .panelWrap, .panelBdr .panelWrap
+{
+	padding: 10px;
+	clear: both;
+}
+
+
+
+.tabs
+{
+	background: url(images/admin-bg.png) no-repeat left -689px;
+	font: normal 12px "Trebuchet MS" , Verdana, Helvetica, sans-serif;
+	color: #fff;
+	height: 38px;
+	padding: 0 10px;
+}
+.tabs li
+{
+	display: inline;
+}
+.tabs li a, .tabs table a
+{
+	color: #9fa0a1;
+	display: block;
+	float: left;
+	margin: 0 1px;
+	text-decoration: none; /*padding:10px 15px;*/
+}
+.tabs li a span, .tabs table a span
+{
+	display: block;
+	padding: 10px 15px 10px 9px;
+}
+
+
+.tabs li a:hover span, .tabs li a.current span, .tabs table a:hover span, .tabs table a.current span
+{
+	background: url(images/admin-bg.png) no-repeat left -954px;
+	padding: 15px 15px 5px 9px;
+	color: #2b2b2b;
+}
+
+.tabs li a:hover span.right, .tabs table a:hover span.right
+{
+	background-position: right -954px;
+}
+
+.tabs li a.current span, .tabs table a.current span
+{
+	background: url(images/admin-bg.png) no-repeat left -907px;
+}
+.tabs li a.current span.right, .tabs table a.current span.right
+{
+	background-position: right -907px;
+}
+
+.tabs li a span.left, .tabs li a span.left:hover, .tabs table a span.left, .tabs table a span.left:hover
+{
+	width: 6px;
+	height: 38px;
+	padding: 0;
+}
+
+.tabData
+{
+	margin: 20px;
+}
+
+
+/*___________________ Form Start ____________________*/
+
+input, select, textarea
+{
+	border: 1px solid #bdbdbd;
+	padding: 3px;
+}
+
+.noBdrInput input
+{
+	border: none;
+	float: left;
+}
+.noBdrInput label
+{
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.btnBrouse
+{
+	background: url(images/admin-bg.png) no-repeat left -876px;
+	padding: 3px 10px;
+}
+.btnBrouse:hover
+{
+	background-position: left -846px;
+}
+.btnBrouse:active
+{
+	background-image: none;
+	background-color: #fff;
+}
+
+.fButton
+{
+	background: url(images/admin-bg.png) no-repeat left -737px;
+	padding: 4px 20px;
+}
+.fButton:hover
+{
+	background-position: left -803px;
+}
+.fButton:active
+{
+	background-position: left -771px;
+}
+
+/*___________________ Form End ____________________*/
+
+
+/* __________________ Message Boxs Start _______________*/
+
+.errorMsg
+{
+	background: #ffe6e6 url(images/admin-bg.png) no-repeat 10px -115px;
+	padding: 7px 7px 7px 40px;
+	margin: 5px 0;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+}
+.successMsg
+{
+	background: #e4f2d8 url(images/admin-bg.png) no-repeat 10px -163px;
+	padding: 7px 7px 7px 40px;
+	margin: 5px 0;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+}
+.worningMsg
+{
+	background: #fdf0c0 url(images/admin-bg.png) no-repeat 10px -205px;
+	padding: 7px 7px 7px 40px;
+	margin: 5px 0;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+}
+.infoMsg
+{
+	background: #cff1ff url(images/admin-bg.png) no-repeat 10px -251px;
+	padding: 7px 7px 7px 40px;
+	margin: 5px 0;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+}
+
+.grayBox, .noticeBox
+{
+	background-color: #f4f4f4;
+	padding: 15px 25px;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	margin: 5px 0;
+}
+.noticeBox
+{
+	background-color: #fff6bf;
+	border-color: #fcd948;
+}
+.grayBox h3, .noticeBox h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+/* __________________ Message Boxs End _______________*/
+
+
+/*___________________ Grid Box Start _________________*/
+
+/*.gridBox { background-color:#f4f4f4; width:100%; }*/
+
+/*.gridTitle {
+			background:url(images/admin-bg.png) no-repeat left -689px;
+			font:bold 12px "Trebuchet MS", Verdana, Helvetica, sans-serif;
+			color:#fff;
+			height:18px;
+			padding:10px 0px;
+			width:100%;
+		}*/
+.gridTitle span
+{
+	margin: 10px 10px;
+	font-size: 12px !important;
+}
+
+.gridBox .gridWrap
+{
+	padding: 10px;
+	clear: both;
+	background-color: #f4f4f4;
+}
+
+.gridBox Table
+{
+	border: none;
+	border-collapse: collapse;
+}
+.gridBox Table Th
+{
+	background-color: #fff;
+	text-align: left;
+	padding: 10px 8px;
+	font-weight: normal;
+}
+.gridBox Table Td
+{
+	padding: 8px;
+	font-size: 11px;
+}
+.gridBox Table Tr.altRow Td
+{
+	background-color: #fff;
+}
+
+gridBox Table Tr.pagger Td
+{
+	/*background-color: none;*/
+	background-color:Transparent;
+}
+
+/*___________________ Grid Box Start _________________*/
+
+
+
+/*______________________ Grid Start ___________________*/
+
+.adminTable
+{
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+}
+.adminTable a
+{
+	font-size: 11px !important;
+}
+
+
+.adminTable th
+{
+	background-color: #fff;
+	color: #000;
+	border: none;
+}
+
+.adminTable th a
+{
+	color: #FFF;
+}
+
+.adminTable td
+{
+	/*border: 1px solid #CCC;  */
+}
+.adminTable td input
+{
+	border: none;
+}
+
+.adminTable table td
+{
+	border: 1px solid #ccc;
+	border: none;
+}
+
+.adminTable table table, .adminTable table table td
+{
+	border: none;
+}
+
+.adminTableHeader td
+{
+	background-color: #fff; /*#024A76;*/
+	color: #000;
+	font-weight: bold;
+	border: none;
+	padding:0
+}
+
+.defaultProvider
+{
+	font-weight: bold;
+}
+
+tr.row:hover td, tr.altItem:hover td
+{
+	background-color: #ccc;
+}
+tr.row td
+{
+	background-color: #f4f4f4;
+	border: none;
+}
+tr.altItem td
+{
+	background-color: #fff;
+	border: none;
+}
+
+
+.Link
+{
+	background: url(images/admin-bg.png) no-repeat left top;
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.add
+{
+	background-position: 1px -320px;
+}
+.edit
+{
+	background-position: left -301px;
+}
+.delete
+{
+	background-position: 1px -340px;
+}
+
+
+.top
+{
+	background-position: 3px -446px;
+}
+.bottom
+{
+	background-position: 3px -389px;
+}
+.up
+{
+	background-position: 3px -427px;
+}
+.down
+{
+	background-position: 3px -408px;
+}
+
+
+/*______________________ Grid End ______________________*/
+
+/*______________________ Page Grid Start _____________________*/
+
+.pageGrid table td
+{
+	padding: 3px;
+}
+.pageGrid table tr:hover td
+{
+	background-color: #ccc;
+}
+.pageGrid table td table tr:hover td
+{
+	background-color: #fff;
+}
+
+
+.pageGrid .buttons td
+{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+.pageGrid .buttons td input
+{
+	padding: 0;
+}
+.pageGrid .header
+{
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+
+
+/*.pageGrid .buttons td .Link { border:1px solid red; }*/
+/*______________________ Page Grid End _____________________*/
+
+
+
+
+/*______________________________ Middle Panel End ______________________________*/
+
+
+
+
+
+
+/*______________________________ Content End ___________________________*/
+
+
+
+/* ______________________________ Footer Start _______________________________*/
+
+#footer
+{
+	position: absolute;
+	/*height: 80px;*/
+	width: 100%;
+	background-color: #d5d5d5;
+	color: #2b2b2b;
+	bottom: 0;
+	left:0
+}
+
+/* ______________________________ Footer End _______________________________*/
+
+
+#message_centercontent
+{
+	margin-bottom: 10px;
+	position: relative;
+	vertical-align: middle;
+	padding: 5px; /*border:1px solid #ccc;*/
+	background-color: #FFFEF2;
+}
+.messagecenter_panel
+{
+	font: bold 18px "Trebuche MS" , Verdana, Helvetica, sans-serif;
+	color: #157797;
+	margin: 10px 10px 0 10px;
+	border-bottom:0px solid #fff;
+ 	/*float:left; 
+    background-color:#157797; 
+    padding:3px;*/
+}
+
+.cotentIco, .settingsIco, .blogIco, .newsletterIco, .securityIco, .clientIco, .invoiceIco, .previewIco, .productIco
+{
+	background-image:url(images/admin-icons.jpg) !important;
+	background-repeat:no-repeat;
+	background-position:-5px top;
+}
+
+	.settingsIco	{ background-position:-5px -27px; }
+	.blogIco		{ background-position:-5px -52px; }
+	.newsletterIco	{ background-position:-5px -77px; }
+	.securityIco	{ background-position:-5px -227px; }
+	.clientIco		{ background-position:-5px -252px; }
+	.invoiceIco		{ background-position:-5px -277px; }
+	.previewIco 	{ background-position:-5px -302px; }
+	.productIco     { background-position: -5px -130px; }
+
+	
+	
+.leftMenuTitleIcon
+{
+	position:absolute;
+	top:-10px;
+	right:0;
+	width:44px;
+	height:50px;
+	background:url(images/menu-title-icon.png) no-repeat left top;
+}
+
+
+/*===================================Login Start========================================*/
+/*.lp_Main {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:11px;
+	background:#2b2b2b url(images/bodybackground.png) no-repeat left center;
+}
+*/
+
+/*______________ General Style Start ______________*/
+
+	/*.floatLeft {
+		position:relative;
+		float:left;
+		width:auto;
+	}
+	
+	.floatRight {
+		position:relative;
+		float:right;
+		width:auto;
+	}
+	
+	
+	
+	.clearBoth {
+		clear:both;	
+	}
+
+	.img {
+		border:none;
+	}
+	
+	
+	p {
+		padding:0;
+		margin:0;
+	}
+	
+	
+	h1, h2, h3, h4, h5, h6, from, P, ul, textarea, form {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		margin:0px;
+		padding:0px;
+	}*/
+	
+/*______________ Header Style Start ______________*/
+
+
+	.loginPost{
+		width:400px;
+		margin:auto;
+		padding-top:50px;
+	}
+	
+	.lpcontainer{
+		/*height:438px;*/
+		width:400px;
+	}
+
+
+
+
+	.lpHeader{
+		/*margin-top:20px;*/
+		/*padding-top:50px;*/	
+	}
+	
+	.lpHeader h1{
+		font-size:30px;
+		color:#FFF;
+		/*text-transform:uppercase;*/
+		margin-bottom:20px;
+	}
+	
+		.lpMemberlogin{
+			background:url(images/member-login-centerbg.png) repeat-x left top;
+			height:55px;
+			width:380px;
+		}
+		
+			.lpMemberlogin h2{
+				font-size:18px;
+				margin:15px 10px;
+				color:#393939;
+			}
+			
+			.lpErrorMsg{
+				background:url(images/password-background.png) repeat-x left top;
+				height:66px;
+				border:1px solid #000;
+			}
+		
+			.lpErrorMsg P{ 
+				color:#FFF;
+				margin:15px;
+				width:250px;
+				font-size:14px;
+				
+			 }
+			 
+			 .lpErrorMsg img{margin:20px;}
+		
+			.lpUsername{
+				background:url(images/username-background.png) repeat-x left top;
+				height:232px;
+				padding:15px;
+				
+				
+			}
+			
+			.lpUsername P{
+				font-size:14px;
+				margin:10px 0px;
+				color:#484542;
+			}
+				
+				
+				
+				.usernameTextbox{
+					background:url(images/username-textbox.png) no-repeat left top;
+					width:347px;
+					height:17px;
+					padding:10px 10px;
+					border:none;
+					font-size:14px;
+					color:#999999;
+				}
+				
+				
+				.lprememberMe{
+					margin:50px 0px 0px 0px;
+					font-size:14px;
+					color:#686868;					
+					width:100%;
+				}
+				
+				
+				.lpcheckbox{
+					width:13px;
+					height:13px;
+					margin-right:5px;
+					border:none;
+				}
+		
+				.loginButton{
+					background:url(images/login-button-background.png) repeat-x left top;
+					height:25px;
+					text-transform:uppercase;
+					padding:0px 15px;
+					font-weight:bold;
+					font-size:12px;
+
+				}
+				
+					.lpforgotPassword {
+						background:url(images/forgotpassword-center-background.png) repeat-x left top;
+						height:55px;
+						width:380px;
+					}
+					
+						.lpforgotPassword ul{
+							list-style:none;
+							margin:18px 0;
+							font-size:14px;
+							
+							
+							
+						}
+						
+						.lpforgotPassword ul li{
+							position:relative;
+							float:left;
+							/*border-right: 1px solid #9a9995;*/
+							padding:0px 15px;
+							
+							/*height:20px;*/
+						}
+					
+							.lpforgotPassword ul li a{
+								color:#686868;
+								text-decoration:none;
+								display:block;
+								
+							}
+							
+							.lpforgotPassword ul li a:hover{
+								color:#000;
+								text-decoration:none;
+								display:block;
+							}
+/*===================================Login End======================*/

@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SubAdmin.master.cs" Inherits="Etech.CMS.Web.admin.SubAdmin" %>
+<%@ Register TagPrefix="CMS" TagName="AnonymousUser" Src="~/controls/authentication/adminAuthentication.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AuthenticatedUser" Src="~/controls/authentication/adminAuthentication.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <link href="../App_Themes/ISTWeb/admin.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../resources/submodal/subModal.css" />
+  <title></title>
+  </head>
+<body>
+    <div id="mainWrap">
+        <form id="form1" runat="server">
+        
+        <!-- Header Start -->
+        <div id="header">
+            <div class="innerWrap">
+                <div class="floatLeft">
+                    <CMS:Label ID="lblProjectName" runat="server" SkinID="proName"></CMS:Label>
+                    <span class="proPunchLine">administration module</span></div>
+                <div class="floatRight userInfo">
+                    <asp:LoginView ID="loginView" runat="server">
+                        <%--<AnonymousTemplate>
+                            <CMS:AnonymousUser ID="dcAnonymousUser" runat="server" />
+                        </AnonymousTemplate>--%>
+                        <AnonymousTemplate>
+                        <CMS:AuthenticatedUser ID="dcAuthenticatedUser" runat="server" />
+                        </AnonymousTemplate>
+                         
+                        <LoggedInTemplate>
+                            <CMS:AuthenticatedUser ID="dcAuthenticatedUser" runat="server" />
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- Content Start -->
+        <div class="innerWrap content">
+           <%-- <h1>
+                <CMS:Label ID="lblPageHeading" runat="server" /></h1>--%>
+            <!-- Left Panel Start -->
+            
+            <!-- Left Panel End -->
+            <!-- Content Panel Start -->
+            <div class="floatLeft middlePanel">
+                <CMS:Panel ID="pnlMsgCenter" runat="server" SkinID="pnlBorder" Visible="false">
+                    <div id="divMessageCenter" class="messagecenter_panel" runat="server">
+                    </div>
+                </CMS:Panel>
+                
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+        <!-- Content Panel End -->
+        <div class="clearBoth">
+        </div>
+        <!-- Content End -->
+        <!-- Footer Start -->
+        <div id="footer">
+            <div class="innerWrap">
+            </div>
+        </div>
+        <!-- Footer End -->
+        <asp:Literal ID="litAnalytics" runat="server" EnableViewState="false" />
+        </form>
+    </div>
+</body>
+</html>

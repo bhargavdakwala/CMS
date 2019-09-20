@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Home.aspx" title="Home"  description="Home">
+
+    <siteMapNode url="~/perth-northern-suburbs-physiotherapy-about-us.aspx" title="About" description="About">
+      <siteMapNode url="~/our-northern-suburbs-physiotherapists.aspx" title="Our Therapists" description="Our Therapists">
+        <siteMapNode url="~/sports-physiotherapists/andrew-stanford.aspx" title="Andrew Stanford" description="Andrew Stanford"></siteMapNode>
+        <siteMapNode url="~/sports-physiotherapists/andrew-hayden.aspx" title="Andrew Hayden" description="Andrew Hayden"></siteMapNode>
+        <siteMapNode url="~/sports-physiotherapists/russell-leadbetter.aspx" title="Russell Leadbetter" description="Russell Leadbetter"></siteMapNode>
+        <siteMapNode url="~/sports-physiotherapists/peter-o-connell.aspx" title="Peter O’Connell" description="Peter O’Connell"></siteMapNode>
+        <siteMapNode url="~/sports-physiotherapists/andrea-munt.aspx" title="Andrea Munt" description="Andrea Munt"></siteMapNode>
+        <siteMapNode url="~/physiotherapists/brad-hart.aspx" title="Brad Hart" description="Brad Hart"></siteMapNode>
+        <siteMapNode url="~/physiotherapists/fiona-o-connell.aspx" title="Fiona O’Connell" description="Fiona O’Connell"></siteMapNode>
+        <siteMapNode url="~/physiotherapists/kelly-mcginnity.aspx" title="Kelly McGinnity" description="Kelly McGinnity"></siteMapNode>
+        <siteMapNode url="~/physiotherapists/cassandra-wright.aspx" title="Cassandra Wright" description="Cassandra Wright"></siteMapNode>
+        <siteMapNode url="~/exercise-physiologist/kate-howard.aspx" title="Kate Howard" description="Kate Howard"></siteMapNode>
+        <siteMapNode url="~/exercise-physiologist/kate-cordy-hedge.aspx" title="Kate Cordy-Hedge" description="Kate Cordy-Hedge"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="-/sportsphysiotherapists/andrewstanford.aspx" title="SportsPhysiotherapists" description="SportsPhysiotherapists"></siteMapNode>
+      <siteMapNode url="~/physiotherapy-frequently-asked-questions.aspx" title="FAQ" description="FAQ"></siteMapNode>
+      <siteMapNode url="~/mtm-physio-links.aspx" title="Links" description="Links"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="~/duncraig-kingsley-carine-karrinyup-physiotherapy-services.aspx" title="Services" description="Services" >
+      <siteMapNode url="~/back-pain-physiotherapy.aspx" title="Back Pain" description="Back Pain"></siteMapNode>
+      <siteMapNode url="~/neck-pain-physiotherapy.aspx" title="Neck Pain" description="Neck Pain"></siteMapNode>
+      <siteMapNode url="~/perth-pilates-physiotherapy.aspx" title="Clinical Pilates" description="Clinical Pilates"></siteMapNode>
+      <siteMapNode url="~/sports-physiotherapy-clinic.aspx" title="Sports Injuries" description="Sports Injuries"></siteMapNode>
+      <siteMapNode url="~/perth-physiotherapy-posture.aspx" title="Posture" description="Posture"></siteMapNode>
+      <siteMapNode url="~/womens-health-physiotherapy.aspx" title="Womens Health" description="Womens Health"></siteMapNode>
+      <siteMapNode url="~/duncraig-rehabilitation-gym.aspx" title="Rehab Gym" description="Rehab Gym"></siteMapNode>
+      
+    </siteMapNode>
+
+    <siteMapNode url="~/contact-mtm-physio-duncraig.aspx" title="Contact" description="Contact"></siteMapNode>
+
+
+    
+  </siteMapNode>
+</siteMap>

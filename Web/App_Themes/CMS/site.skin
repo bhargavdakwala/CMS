@@ -1,0 +1,124 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+ 
+<CMS:CheckBox runat="server" CssClass="checkbox" />
+<CMS:Label runat="server" CssClass="label" />
+<CMS:Label runat="server" CssClass="proName" SkinId="proName" />
+<CMS:Label runat="server" CssClass="subTitle" SkinID="subTitle" />
+
+
+<CMS:Button runat="server" CssClass="fButton" />
+<CMS:Label runat="server" CssClass="adminHeader" SkinId="adminHeader" />
+<CMS:Label runat="server" CssClass="smalllabel" SkinId="smalllabel"/>
+<CMS:HyperLink runat="server" CssClass="hyperlink" />
+<CMS:LinkButton runat="server" CssClass="hyperlink"/>
+<CMS:LinkButton runat="server" CssClass="Link delete" SkinId="delete"/>
+<CMS:LinkButton runat="server" CssClass="Link edit" SkinId="edit"/>
+<CMS:HyperLink runat="server" CssClass="Link edit" SkinId="edit" />
+<%--<CMS:HyperLink runat="server" CssClass="submodal-640-500 Link edit" SkinId="submodaledit" />--%>
+
+<CMS:HyperLink runat="server" CssClass="submodal-900-500 Link edit" SkinId="submodaledit" />
+
+<CMS:HyperLink runat="server" ImageUrl="images/checkout.gif" NavigateUrl="~/checkout.aspx" SkinId="proceedToCheckout" />
+<CMS:HyperLink runat="server" CssClass="submodal-640-500" SkinId="submodal-640-500" />
+<CMS:HyperLink runat="server" CssClass="submodal-800-430" SkinId="submodal-800-430" />
+<CMS:HyperLink runat="server" CssClass="submodal-900-500" SkinId="submodal-900-500" />
+
+<CMS:HyperLink runat="server" CssClass="biglink" SkinId="biglink" />
+<CMS:HyperLink runat="server" ImageUrl="images/logo.gif" NavigateUrl="http://www.CMS.org" SkinId="sitelogo" />
+<CMS:HyperLink runat="server" ImageUrl="images/logo.gif" NavigateUrl="http://www.CMS.org" SkinId="logo" />
+<CMS:HyperLink runat="server" ImageUrl="images/smalllogo.gif" NavigateUrl="http://www.CMS.org" SkinId="smalllogo" />
+<CMS:HyperLink runat="server" SkinId="addnew"/>
+<%--<CMS:HyperLink runat="server" ImageUrl="images/icons/addnew.gif" SkinId="addnew"/>--%>
+<CMS:HelpLink runat="server" ImageUrl="images/icons/addnew.gif" SkinId="addnew"/>
+<CMS:HelpLink runat="server" ImageUrl="images/icons/back.png" SkinId="back" />
+<asp:Image runat="server" ImageUrl="images/close.gif" SkinId="close" />
+<asp:Image runat="server" ImageUrl="images/spinner.gif" SkinId="spinner"/>
+<asp:Image runat="server" ImageUrl="images/closed.jpg" SkinId="closed" />
+<asp:Image runat="server" ImageUrl="images/icons/cart.gif" SkinId="cart"/>
+<%--<asp:Image runat="server" ImageUrl="images/icons/success.gif" SkinId="success" />
+<asp:Image runat="server" ImageUrl="images/icons/information.gif" SkinId="information" />
+<asp:Image runat="server" ImageUrl="images/icons/error.gif" SkinId="error"/>
+<asp:Image runat="server" ImageUrl="images/icons/critical.gif" SkinId="critical"/>--%>
+<CMS:HelpLink runat="server" ImageUrl="images/icons/help.gif" />
+<CMS:HyperLink runat="server" ImageUrl="images/noDefaultImage.gif" SkinId="noDefaultImage" CssClass="productImage"/>
+<CMS:HyperLink runat="server" ImageUrl="images/icons/right.gif" SkinId="next"/>
+<CMS:HyperLink runat="server" ImageUrl="images/icons/left.gif" SkinId="previous"/>
+<CMS:HyperLink runat="server" ImageUrl="images/1pix.gif" SkinId="noCategoryImage" />
+<asp:Image runat="server" ImageUrl="images/icons/amex.gif" SkinId="amex"/>
+<asp:Image runat="server" ImageUrl="images/icons/visa.gif" SkinId="visa"/>
+<asp:Image runat="server" ImageUrl="images/icons/mc.gif" SkinId="mc"/>
+<asp:Image runat="server" ImageUrl="images/icons/paypal.gif" SkinId="paypal"/>
+<asp:Image runat="server" ImageUrl="images/icons/discover.gif" SkinId="discover"/>
+<asp:Image runat="server" ImageUrl="images/icons/maestro.gif" SkinId="maestro"/>
+<asp:Image runat="server" ImageUrl="images/icons/solo.gif" SkinId="solo"/>
+<asp:Image runat="server" ImageUrl="images/noDefaultImage.gif" SkinId="noImage"/>
+<asp:Image runat="server" ImageUrl="images/rss_reflection.gif" SkinId="rssReflect"/>
+<asp:Image runat="server" ImageUrl="images/icons/SSL.png" SkinId="ssl"/>
+<%--<asp:ImageButton runat="server" ImageUrl="images/icons/critical.gif" SkinId="delete"/>--%>
+<asp:ImageButton runat="server" CssClass="Link edit" SkinId="edit"/>
+<asp:ImageButton runat="server" CssClass="Link delete" SkinId="delete"/>
+
+
+
+<CMS:DataGrid runat="server" CssClass="adminTable" SkinId="adminDataGrid" AllowPaging="true" PageSize="30" GridLines="None">
+  <HeaderStyle CssClass="adminTableHeader" />
+  <AlternatingItemStyle CssClass="altItem" />
+  <ItemStyle BackColor="#FFFFFF" CssClass="row"/>
+  <PagerStyle Mode="NumericPages" BackColor="#EBEBEB" />
+</CMS:DataGrid>
+<CMS:DataGrid runat="server" CssClass="adminTable" SkinId="adminDataGridNoPage" GridLines="None">
+  <HeaderStyle CssClass="adminTableHeader" />
+  <AlternatingItemStyle CssClass="altItem" />
+  <ItemStyle BackColor="#FFFFFF" CssClass="row"/>
+  <PagerStyle Mode="NumericPages" BackColor="#EBEBEB" />
+</CMS:DataGrid>
+<CMS:DataGrid runat="server" CssClass="adminTable" SkinId="adminDataGridNoPageSmall" Font-Size=".7em" GridLines="None">
+  <HeaderStyle CssClass="adminTableHeader" />
+  <AlternatingItemStyle CssClass="altItem" />
+  <ItemStyle BackColor="#FFFFFF" CssClass="row"/>
+</CMS:DataGrid>
+
+
+
+
+<CMS:HyperLink runat="server" CssClass="showAll" SkinId="showAll"/>
+<asp:ImageButton runat="server" ImageUrl="images/icons/up.gif" SkinId="up"/>
+<asp:ImageButton runat="server" ImageUrl="images/icons/down.gif" SkinId="down"/>
+
+<asp:ImageButton runat="server" ImageUrl="images/icons/upParent.gif" SkinId="upParent"/>
+<asp:ImageButton runat="server" ImageUrl="images/icons/downParent.gif" SkinId="downParent"/>
+<%--<asp:ImageButton runat="server" ImageUrl="images/icons/edit.jpg" SkinId="Edit"/>--%>
+
+<asp:Menu runat="server" DynamicPopOutImageUrl="images/icons/whitearrow.gif" StaticPopOutImageUrl="images/icons/whitearrow.gif" SkinId="menu"/>
+<asp:Menu runat="server" StaticBottomSeparatorImageUrl="images/icons/breadcrumb.gif" CssClass="breadcrumbs" SkinId="breadcrumbs" />
+<asp:DataList runat="server" RepeatColumns="3" RepeatDirection="Horizontal" RepeatLayout="Table" SkinId="catalogList" CssClass="catalogListing"/>
+<asp:Rating runat="server" StarCssClass="ratingStar" FilledStarCssClass="filledStar" WaitingStarCssClass="waitingStar" EmptyStarCssClass="emptyStar" SkinId="rating" CssClass="rating" />
+<asp:CollapsiblePanelExtender runat="server" CollapsedImage="images/icons/down.gif" ExpandedImage="images/icons/up.gif" SkinId="withImage"/>
+<asp:RadioButtonList runat="server" CssClass="smallradiobuttonlist" SkinId="smallradiobuttonlist" />
+<CMS:Panel runat="server" CssClass="accordionHeader" SkinId="accordionHeader" />
+<CMS:Panel runat="server" CssClass="checkoutRightPanel" SkinId="checkoutRightPanel" />
+<CMS:Panel runat="server" CssClass="panel" />
+<CMS:Panel runat="server" CssClass="panelBdr" SkinID="pnlBorder" />
+<%-- for providers --%>
+<asp:Image runat="server" ImageUrl="images/icons/help.gif" SkinId="help"/>
+<asp:DataGrid runat="server" CssClass="adminTable" SkinId="adminDataGrid" AllowPaging="true" PageSize="30" GridLines="None">
+  <HeaderStyle CssClass="adminTableHeader" />
+  <AlternatingItemStyle CssClass="altItem" />
+  <ItemStyle CssClass="altItem"/>
+  <PagerStyle Mode="NumericPages" BackColor="#EBEBEB" />
+</asp:DataGrid>

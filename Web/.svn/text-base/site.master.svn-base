@@ -1,0 +1,364 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="Etech.CMS.Web.site" %>
+
+
+<%@ Register TagPrefix="CMS" TagName="TopMenu" Src="~/controls/navigation/submenuNavigation.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AnonymousUser" Src="~/controls/authentication/anonymoususer.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AuthenticatedUser" Src="~/controls/authentication/authenticateduser.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="FooterMenu" Src="~/controls/navigation/FooterNavigation.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="ServiceHomeImage" Src="~/controls/content/ServiceHomeImages.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="PageSubMenuTitle" Src="~/controls/content/PageSubMenuAndTitle.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="TopMainMenu" Src="~/controls/navigation/TopMenuNavigation.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="RecentNews" Src="~/controls/HomeNews.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="MonthlyMeeting" Src="~/controls/content/MonthlyMeeting.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="HomeMailList" Src="~/controls/content/HomeMailList.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="PlatinumSponsorsGallery" Src="~/controls/content/PlatinumSponsorsGallery.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="FooterImageGallery" Src="~/controls/content/FooterImageGallery.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="CommonBanner" Src="~/controls/content/CommonBanner.ascx" %>
+<%@ Register Src="~/controls/LatestNews.ascx" TagPrefix="CMS" TagName="LatestNews" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head1" runat="server">
+	<meta runat="Server" name="keywords" id="KeywordsTag" content="" />
+	<meta runat="Server" name="description" id="DescriptionTag" content="" />
+	<meta runat="Server" name="generator" id="GeneratorTag" content="" />
+	<meta runat="Server" name="robots" id="robots" content="index, follow" />
+	<meta runat="server" name="revisit-after" id="revisitafter" content="7 days" />
+	<meta runat="Server" name="author" id="author" content="iSolutions Technology" />
+	<meta runat="Server" name="distribution" id="distribution" content="global" />
+	<meta runat="Server" name="language" id="language" content="english" />
+	<meta runat="Server" name="copyright" id="CopyrightTag" content="© Copyright AHSCA WA Chapter 2011. All rights reserved" />
+	<title></title>
+	<link rel="shortcut icon" href="http://www.ahscawa.com.au/images/ahsca.ico" />
+	<link href="http://www.ahscawa.com.au/controls/content/styles/2colmainright.css" rel="stylesheet" type="text/css" />
+	<script src="http://www.ahscawa.com.au/SlidesJavaScript/jquery.min.js" type="text/javascript"></script>
+	<script src="http://www.ahscawa.com.au/SlidesJavaScript/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="http://www.ahscawa.com.au/JavaScript/slides.min.jquery.js" type="text/javascript"></script>
+	<link href="http://www.ahscawa.com.au/scripts/nivo-slider/nivo-slider.css" rel="stylesheet" type="text/css" />
+	<link href="http://www.ahscawa.com.au/App_Themes/SiteTheme/style.css" rel="stylesheet" type="text/css" />
+
+	<style>
+	<!-- 
+		.membersList tr td
+		{
+			border-bottom:1px solid #d1d1d2;
+			vertical-align:top;
+		}
+			.membersList tr td table tr td { border:none; } 
+		
+	-->
+	</style>
+
+
+
+	<%--<script src="scripts/jquery-1.4.3.min.js" type="text/javascript"></script>--%>
+	<script src="http://www.ahscawa.com.au/scripts/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+
+		$(window).load(function () {
+			$('#slider').nivoSlider({
+				directionNav: false
+			});
+		});
+	</script>
+	<link href="http://www.ahscawa.com.au/App_Themes/css/global.css" rel="stylesheet" type="text/css" />
+	<%-- <script src="SlidesJavaScript/jquery.min.js" type="text/javascript"></script>
+	<script src="SlidesJavaScript/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="JavaScript/slides.min.jquery.js" type="text/javascript"></script>--%>
+	<script type="text/javascript" language="javascript">
+
+
+		$(function () {
+			$('#slides').slides({
+				//preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 7000,
+				pause: 2500
+				/*pause:2500,
+				hoverPause: true*/
+			});
+		});
+	</script>
+	<script src="http://www.ahscawa.com.au/js/jquery.ui.widget.js" type="text/javascript"></script>
+	<!-- Smooth Div Scroll 1.0 - minified for faster loading-->
+	<script src="http://www.ahscawa.com.au/js/jquery.smoothDivScroll-1.0-min.js" type="text/javascript"></script>
+	<link href="http://www.ahscawa.com.au/App_Themes/css/smoothDivScroll.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		$(function () {
+			//$("div#makeMeScrollable").smoothDivScroll({ autoScrollStep: 1, autoScrollInterval: 50, visibleHotSpots: "always", autoScroll: "onstart", autoScrollDirection: "backandforth", mouseOverRightHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll("startAutoScroll"); }, mouseOverLeftHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll("startAutoScroll"); } });
+			//$("div#makeMeScrollable").smoothDivScroll({ autoScrollStep: 1, autoScrollInterval: 50, visibleHotSpots: "always", mouseDownSpeedBooster: 1, autoScroll: "onstart", autoScrollDirection: "right", mouseOverRightHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll("startAutoScroll"); }, mouseOverLeftHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll("startAutoScroll"); } });
+
+			//$("div#makeMeScrollable").smoothDivScroll({ autoScrollStep: 1, autoScrollInterval: 50, visibleHotSpots: "always", mouseDownSpeedBooster: 1, autoScroll: "onstart", autoScrollDirection: "backandforth", scrollStep: 4, mouseOverRightHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll({ autoScrollStep: 1, autoScrollInterval: 50, visibleHotSpots: "always", mouseDownSpeedBooster: 1, autoScroll: "onstart", autoScrollDirection: "backandforth", scrollStep: 4 }); }, mouseOverLeftHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll({ autoScrollStep: 1, autoScrollInterval: 50, visibleHotSpots: "always", mouseDownSpeedBooster: 1, autoScroll: "onstart", autoScrollDirection: "backandforth", scrollStep: 4 }); } });
+			$("div#makeMeScrollable").smoothDivScroll({ autoScrollStep: 1, autoScrollInterval: 50, visibleHotSpots: "always", autoScroll: "onstart", autoScrollDirection: "backandforth", mouseOverRightHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll("startAutoScroll").smoothDivScroll({ scrollStep: 4 }); }, mouseOverLeftHotSpot: function () { $("div#makeMeScrollable").smoothDivScroll("startAutoScroll").smoothDivScroll({ scrollStep: 4 }); } });
+
+		});
+	</script>
+
+   <script type="text/javascript">
+
+
+
+	   var _gaq = _gaq || [];
+
+	   _gaq.push(['_setAccount', 'UA-15153359-3']);
+
+	   _gaq.push(['_setDomainName', 'none']);
+
+	   _gaq.push(['_setAllowLinker', true]);
+
+	   _gaq.push(['_trackPageview']);
+
+
+
+	   (function () {
+
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+	   })();
+
+ 
+
+</script>
+
+
+	
+
+</head>
+<body>
+	<form id="form1" runat="server">
+	<asp:ScriptManager ID="scriptManager" runat="server" EnablePartialRendering="true">
+	</asp:ScriptManager>
+	<div class="wrap" style="overflow:hidden">
+
+	
+
+		 
+
+		<!-- Header Start -->
+		<div class="header">
+
+		   
+			
+			<div class="innerwrap">
+				<!-- Header Top Menu Start -->
+				<div class="roundcorner">
+					<CMS:TopMainMenu ID="MainMenu" runat="server"/>
+					<img src="http://www.ahscawa.com.au/images/google.png" alt="google puls" title="google puls" />
+					<img src="http://www.ahscawa.com.au/images/in.png" alt="Linkedin" title="Linkedin" />
+					<img src="http://www.ahscawa.com.au/images/fb.png" alt="Facebook" title="Facebook" />
+					<img src="http://www.ahscawa.com.au/images/like.png" alt="Like" title="Like" />
+				</div>
+				<!-- Header Top Menu End -->
+				<a href="http://www.ahscawa.com.au/Home.aspx"><img src="http://www.ahscawa.com.au/images/ahsca-logo.png" alt="AHSCA" title="AHSCA" class="logo" /></a>
+
+
+					
+
+
+			</div>
+
+			
+		</div>
+		<!-- Header End -->
+		
+		
+
+		<div class="innerwrap" style="position:relative;">
+
+			<div style="position:absolute; top:110px; right:-132px;">
+				<CMS:CommonBanner id="cb" runat="server"></CMS:CommonBanner>
+			</div>
+
+			<!-- Banner Start -->
+
+				  
+
+			<div class="banner" >
+				<%--<a href="#">
+					<img src="images/banner 1.jpg" alt="Welcome to the AHSCA WA Chapter" title="Welcome to the AHSCA WA Chapter" /></a>--%>
+				<div id="slider" class="nivoSlider">
+				<a href="http://www.ahscawa.com.au/latest-news.aspx">
+						<img src="http://www.ahscawa.com.au/images/ahscascholarshipbanner.jpg" alt="Welcome to the AHSCA WA Chapter" title="#caption1" /></a>
+					<a href="http://www.ahscawa.com.au/Profile.aspx">
+						<img src="http://www.ahscawa.com.au/images/banner1.jpg" alt="Welcome to the AHSCA WA Chapter" title="#caption2" /></a>
+					<a href="http://www.ahscawa.com.au/ahsca-hydraulic-services.aspx">
+						<img src="http://www.ahscawa.com.au/images/banner2.jpg" alt="Welcome to the AHSCA WA Chapter" title="#caption3" /></a>
+					<a href="http://www.ahscawa.com.au/ahsca-wa-chapter-sponsors.aspx">
+						<img src="http://www.ahscawa.com.au/images/banner3.jpg" alt="Welcome to the AHSCA WA Chapter" title="#caption4" /></a>
+				</div>
+				<%--<div id="caption1" class="nivo-html-caption">
+					<a href="#">VIEW OUR PROFILE&nbsp;&nbsp;&nbsp;></a>
+				</div>
+				<div id="caption2" class="nivo-html-caption">
+					<a href="#">VIEW OUR PROFILE&nbsp;&nbsp;&nbsp;></a>
+				</div>
+				<div id="caption3" class="nivo-html-caption">
+					<a href="#">VIEW OUR PROFILE&nbsp;&nbsp;&nbsp;></a>
+				</div>--%>
+
+			</div>
+			
+		   
+			<!-- Banner End -->
+		</div>
+		
+		
+			
+
+		<!-- Container Start -->
+		<div class="container">
+			<!-- leftPanel Start -->
+			<div id="LeftWrap">
+				<!-- Navigation Start -->
+				<CMS:TopMenu ID="TopMenu" runat="server" />
+				<!-- Navigation End -->
+				<!-- Sponsors Start -->
+				<h3 class="sponsors white">
+					<a href="http://www.ahscawa.com.au/Platinum-Articles.aspx" style="color:#FFF;">Platinum Sponsors</a></h3>
+				<div class="sponsorslogo">
+					<%--<a href="#" class="floatLeft sponsorsNext"></a>
+					<img src="images/sponsors-logo.png" alt="" />
+					<a href="#" class="floatRight sponsorsPrv"></a>--%>
+					<div id="containerLeftImageGallery">
+						<CMS:PlatinumSponsorsGallery ID="PSG" runat="server"/>
+
+					</div> 
+				   
+				</div>
+				<!-- Sponsors End -->
+				<!-- Services Start -->
+				<div class="services">
+					<h2 class="white">
+						SERVICES</h2>
+					<CMS:ServiceHomeImage ID="ServiceHomeImage" runat="server" />
+				</div>
+				<!-- Services End -->
+			</div>
+			<!-- leftPanel End -->
+			<!-- RightPanel Start -->
+			<div id="ContentWrap">
+				<!-- Meeting Start -->
+				<div class="floatLeft meetingDates white" id="dvMeeting" runat="server">
+					<%--<CMS:MonthlyMeeting ID="MonthlyMeeting" runat="server" />--%>
+					<CMS:LatestNews ID="latestNews" runat="server" />
+				</div>
+				<!-- Meeting End -->
+				<!-- RecentNews Start -->
+				<div class="floatLeft recentNews" id="dvRecentNews" runat="server">
+					<CMS:RecentNews ID="RecentNews" runat="server" />
+				</div>
+				<!-- RecentNews End -->
+				<div class="clearBoth">
+				</div>
+				<h1 id="hPageContentTitle" class="white" runat="server">
+				</h1>
+				<div class="menuBackground" runat="server" id="divMiddleMenu">
+					<asp:Repeater ID="rptSubMenu" runat="server" OnItemDataBound="rptSubMenu_ItemDataBound">
+						<HeaderTemplate>
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+						</HeaderTemplate>
+						<ItemTemplate>
+							<td width="92px" height="58" align="center" valign="middle" id="tdActive" runat="server">
+								<asp:Label ID="lblPageID" runat="server" Visible="false" Text='<%# Eval("PageId") %>'></asp:Label>
+								<asp:Label ID="lblRedirectID" runat="server" Visible="false" Text='<%# Eval("RedirectId") %>'></asp:Label>
+								<asp:HyperLink ID="lnkPage" runat="server" Text='<%# Eval("MenuTitle") %>' NavigateUrl='<%# Geturl(Eval("URLTitle")) %>'></asp:HyperLink>
+							</td>
+						</ItemTemplate>
+						<FooterTemplate>
+							</tr> </table>
+						</FooterTemplate>
+					</asp:Repeater>
+				</div>
+				<div style="position: relative;">
+					<asp:LinkButton CssClass="floatRight button absoluteButton" ID="lnkNext" runat="server"
+						Visible="false" OnClick="lnkNext_Click" style="width:50px" > Next <span class="nextArrow"></span> </asp:LinkButton>
+					<asp:LinkButton CssClass="floatRight button absoluteButton prvBtn" ID="lnkPrevious"
+						runat="server" Visible="false" OnClick="lnkPrevious_Click" style="width:50px"  ><span class="prvArrow"></span> Previous </asp:LinkButton>
+					<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+					</asp:ContentPlaceHolder>
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+			<!-- RightPanel End -->
+			<!-- Container Start -->
+			<div class="clearBoth">
+			</div>
+			<hr />
+			<!-- Clientlogo Start -->
+			<div class="clientLogo">
+					<CMS:FooterImageGallery ID="FooterImageGallery" runat="server" />
+				
+					<%--<div id="makeMeScrollable">
+						<div class="scrollingHotSpotLeft">
+						</div>
+						<div class="scrollingHotSpotRight">
+						</div>
+						<div class="scrollWrapper">
+							<div class="scrollableArea">
+								
+									<img src="images/logo-01.png" alt="Demo image" width="134" height="56" border="0" />
+								
+									<img src="images/logo-02.png" alt="Demo image" width="134" height="56" />
+								
+									<img src="images/logo-03.png" alt="Demo image" width="134" height="56" />
+								
+									<img src="images/logo-04.png" alt="Demo image" width="134" height="56" />
+								
+									<img src="images/logo-05.png" alt="Demo image" width="134" height="56" />
+								
+									<img src="images/logo-06.png" alt="Demo image" width="134" height="56" />
+
+									<img src="images/logo-06.png" alt="Demo image" width="134" height="56" />
+
+									<img src="images/logo-06.png" alt="Demo image" width="134" height="56" />
+							</div>
+						</div>
+					</div>--%>
+			   
+			   
+				<div class="clearBoth">
+				</div>
+			</div>
+			<!-- Clientlogo End -->
+		</div>
+		
+		
+	</div>
+	<!-- Footer Start -->
+	<div class="footer">
+		<div class="innerwrap">
+			<CMS:FooterMenu ID="FooterMenu" runat="server" />
+			<!-- Div Start -->
+			<div class="floatRight">
+				<CMS:HomeMailList ID="HomeMailList" runat="server" />
+				<div class="floatLeft">
+					<%--<img src="http://www.ahscawa.com.au/images/google+.png" alt="google puls" title="google puls" />
+					<img src="http://www.ahscawa.com.au/images/in.png" alt="Linkedin" title="Linkedin" />
+					<img src="http://www.ahscawa.com.au/images/fb.png" alt="Facebook" title="Facebook" />
+					<img src="http://www.ahscawa.com.au/images/like.png" alt="Like" title="Like" />--%>
+					<a href="http://www.isolutionstechnology.com.au/" target="_blank">
+					<img src="http://www.ahscawa.com.au/images/ist-Logo.png" class="floatLeft" alt="" style="padding-right:5px;"/></a>
+
+					<span class="floatRight" style="font-size:11px; color:#397da8; display:block;">
+					Website Designed by iSolutions Technlogy<br/>
+					 <a href="http://www.isolutionstechnology.com.au/perth-website-designer/web-overview.aspx" target="_blank">Web Design Perth</a> | <a href="http://www.isolutionstechnology.com.au/perth-website-designer/search-engine-optimisation-overview.aspx"
+							target="_blank" rel="nofollow">Perth SEO</a><br/>
+					<a href="http://www.isolutionstechnology.com.au/perth-website-products/perth-web-hosting.aspx"
+							target="_blank" rel="nofollow">Web Hosting</a></span>
+
+				   				</div>
+			</div>
+			<!-- Div End -->
+		</div>
+	</div>
+	<!-- Footer END -->
+	</form>
+</body>
+</html>

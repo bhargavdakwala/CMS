@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode url="~/admin/default.aspx" title="$Resources:adminNav, Default" tooltip="$Resources:adminNavTooltips, Default">
+    <siteMapNode url="~/admin/contentaddedit.aspx" title="$Resources:adminNav, ContentManagement" description="cotentIco"/>
+    <siteMapNode url="~/admin/sitesettings.aspx?view=c" title="$Resources:adminNav, SiteSettings" description="settingsIco"  />
+
+    <!--<siteMapNode url="~/admin/blogcategoryedit.aspx" title="$Resources:adminNav, BlogCategories" description="newsletterIco"/>
+    <siteMapNode url="~/admin/blogedit.aspx"  title="$Resources:adminNav, Blog" description="newsletterIco" />-->
+    
+    <siteMapNode url="~/admin/ServiceEdit.aspx" title="$Resources:adminNav, testimonials" description="newsletterIco"/>
+    <siteMapNode url="~/admin/FullMember.aspx" title="$Resources:adminNav, FullMember" description="newsletterIco"/>
+    <siteMapNode url="~/admin/CommonBanner.aspx" title="$Resources:adminNav, CommonBanner" description="newsletterIco"/>
+
+    <siteMapNode url="~/admin/ProjectEdit.aspx" title="$Resources:adminNav, MonthlyMeeting" description="newsletterIco"/>
+
+    <!-- <siteMapNode url="" title="$Resources:adminNav, Service" description="blogIco" >
+      <siteMapNode url="~/admin/ServiceEdit.aspx" title="$Resources:adminNav, ServicesCategory"/>
+      <siteMapNode url="~/admin/ServiceDetailEdit.aspx" title="$Resources:adminNav, ServicesDetail"/>
+    </siteMapNode>-->
+
+
+    <!--<siteMapNode url="~/admin/ServiceEdit.aspx" title="$Resources:adminNav, Service" description="newsletterIco"/>-->
+
+    
+
+    <siteMapNode url="" title="$Resources:adminNav, Newsletter" description="newsletterIco" >
+      <siteMapNode url="~/admin/newsLetterGroup.aspx" title="$Resources:adminNav, NewsLetter Group"/>
+      <siteMapNode url="~/admin/NewsletterUsers.aspx" title="$Resources:adminNav, NewsLetter Users"/>
+      <siteMapNode url="~/admin/newsletterTemplates.aspx"  title="$Resources:adminNav, NewsLetters Templates"/>
+      <siteMapNode url="~/admin/newsletterAddEdit.aspx"  title="$Resources:adminNav, NewsLetters"/>
+    </siteMapNode>
+
+    <!--<siteMapNode url="~/admin/GallerySubCategoryEdit.aspx" title="$Resources:adminNav, GallerySubCategory" description="newsletterIco"/>-->
+
+    <!--<siteMapNode url="~/admin/ProjectEdit.aspx" title="$Resources:adminNav, Project" description="newsletterIco"/>-->
+    <!--<siteMapNode url="~/admin/testimonials.aspx" title="$Resources:adminNav, testimonials" description="newsletterIco"/>-->
+    <siteMapNode  title="$Resources:adminNav, Security" description="securityIco">
+      <siteMapNode url="~/admin/userlist.aspx" title="$Resources:adminNav, UserAdministration"/>
+      <siteMapNode url="~/admin/rolelist.aspx" title="$Resources:adminNav, RoleAdministration"/>
+      <siteMapNode url="~/admin/ChangePassword.aspx" title="$Resources:adminNav, ChangePassword"/>
+    </siteMapNode>
+    <!--<siteMapNode url="~/admin/overview.aspx?view=si" title="$Resources:adminNav, Site"  >-->
+    <!--<siteMapNode url="~/admin/contentedit.aspx" title="$Resources:adminNav, ContentManagement" />-->
+
+
+
+    <!--</siteMapNode>-->
+    <siteMapNode url="~/admin/GalleryCategoryEdit.aspx" title="$Resources:adminNav, GalleryCategory" description="newsletterIco"/>
+    <siteMapNode url="~/admin/ImageGallaryEdit.aspx" title="$Resources:adminNav, ImageGallary" description="productIco"  />
+    <!--<siteMapNode url="~/admin/overview.aspx?view=pm" title="$Resources:adminNav, ProductManagement" description="productIco" >-->
+    <!--<siteMapNode  title="$Resources:adminNav, ProductManagement" description="productIco" >
+      <siteMapNode url="~/admin/productlist.aspx" title="$Resources:adminNav, ProductListing" />
+      --><!--<siteMapNode url="~/admin/categoryedit.aspx" title="$Resources:adminNav, ProductCategories" />
+      <siteMapNode url="~/admin/manufacturers.aspx" title="$Resources:adminNav, ProductManufacturers" />--><!--
+
+    </siteMapNode>-->
+
+    <siteMapNode url="~/Home.aspx" title="$Resources:adminNav, ReturnToSite" description="previewIco"/>
+
+  </siteMapNode>
+</siteMap>
+

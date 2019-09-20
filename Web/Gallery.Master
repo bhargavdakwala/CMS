@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Gallery.master.cs" Inherits="Etech.CMS.Web.Gallery" %>
+
+<%@ Register TagPrefix="CMS" TagName="TopMenu" Src="~/controls/navigation/submenuNavigation.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AnonymousUser" Src="~/controls/authentication/anonymoususer.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AuthenticatedUser" Src="~/controls/authentication/authenticateduser.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="FooterMenu" Src="~/controls/navigation/FooterNavigation.ascx" %>
+<%@ Register TagName="ImgGallery" TagPrefix="CMS" Src="~/controls/content/ImageGallary.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta runat="Server" name="keywords" id="KeywordsTag" />
+    <meta runat="Server" name="description" id="DescriptionTag" />
+    <meta runat="Server" name="generator" id="GeneratorTag" />
+    <meta runat="Server" name="robots" id="robots" content="index, follow" />
+    <meta runat="server" name="revisit-after" id="revisitafter" content="7 days" />
+    <meta runat="Server" name="author" id="author" content="iSolutions Technology" />
+    <meta runat="Server" name="distribution" id="distribution" content="global" />
+    <meta runat="Server" name="language" id="language" content="english" />
+    <meta runat="Server" name="copyright" id="CopyrightTag" content="© Copyright PJ Wright &#38; Associates 2011. All rights reserved" />
+    <title></title>
+    <%--<link rel="shortcut icon" href="images/PJWFavicon.ico" />--%>
+    <link href="controls/content/styles/1col.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="scriptManager" runat="server" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    <div class="wrap">
+        <div class="innerWrap">
+            <!-- Header Start -->
+            <div class="header">
+                <a href="Home.aspx">
+                    <img src="images/logo-paul-bradley.png" alt="Paul Bradley" title="Paul Bradley" class="floatLeft" />
+                </a>
+                <div class="floatRight">
+                    <CMS:TopMenu ID="topMenu" runat="server" />
+                </div>
+            </div>
+            <!-- Header End -->
+            <!-- Content Start -->
+            <div class="contentDiv">
+                <div class="box">
+                    <CMS:ImgGallery ID="imgGallery" runat="server" />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                    <div class="clearBoth">
+                    </div>
+                </div>
+            </div>
+            <!-- Content End -->
+        </div>
+        <!-- Fooater End -->
+        <div class="footer">
+            <div class="innerwrap">
+                <CMS:FooterMenu ID="footerMenu" runat="server" />
+                <p>
+                    © Copyright at Paul Bradley Jewellers &nbsp; &nbsp; &nbsp;Designed by <a href="http://www.isolutionstechnology.com.au/"
+                        target="_blank">iSolutions Technology</a> - Web Design Perth | SEO Perth</p>
+            </div>
+        </div>
+        <!-- Fooater End -->
+    </div>
+    </form>
+</body>
+</html>

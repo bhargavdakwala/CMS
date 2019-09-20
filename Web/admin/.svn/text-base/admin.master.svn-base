@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Etech.CMS.Web.admin.admin" %>
+
+<%@ Register TagPrefix="CMS" TagName="AnonymousUser" Src="~/controls/authentication/anonymoususer.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AuthenticatedUser" Src="~/controls/authentication/authenticateduser.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <%--<link href="../../css/admin.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../App_Themes/CMS/admin.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../resources/submodal/subModal.css" />
+    <link rel="shortcut icon"  href="../images/ahsca.ico" />
+    <script type="text/javascript" src="../resources/submodal/common.js"></script>
+
+    <script type="text/javascript" src="../resources/submodal/subModal.js"></script>
+
+    <script type="text/javascript" src="../resources/overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+
+</head>
+<body>
+    <div id="mainWrap">
+        <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManager" runat="server" EnablePartialRendering="true" />
+        <!-- Header Start -->
+        <div id="header">
+            <div class="innerWrap">
+                <div class="floatLeft">
+                    <CMS:Label ID="lblProjectName" runat="server" SkinID="proName"></CMS:Label>
+                    <span class="proPunchLine">the administration module</span></div>
+                <%--  <a href="#" class="viewProject" title="View Project"><span class="floatLeft left"></span>
+                    <span class="floatLeft right">View Project</span></a>--%>
+                <div class="floatRight userInfo">
+                    <asp:LoginView ID="loginView" runat="server">
+                        <AnonymousTemplate>
+                            <CMS:AnonymousUser ID="dcAnonymousUser" runat="server" />
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <CMS:AuthenticatedUser ID="dcAuthenticatedUser" runat="server" />
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- Content Start -->
+        <div class="innerWrap content">
+            <h1>
+                <CMS:Label ID="lblPageHeading" runat="server" /></h1>
+            <!-- Left Panel Start -->
+            <div class="floatLeft leftPanel">
+                <div class="leftMenu">
+                    <div class="leftTitle">
+                        Quick Links</div>
+                    <asp:Repeater ID="rptLeftMenu" runat="server" DataSourceID="smdsAdminMenu">
+                        <HeaderTemplate>
+                            <ul>
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <asp:Repeater ID="rptLeftChildMenu" runat="server" DataSource='<%#((SiteMapNode) Container.DataItem).ChildNodes %>'>
+                                <ItemTemplate>
+                                    <li>
+                                        <asp:HyperLink ID="lnkPage" runat="server" Text='<%#Eval("Title")%>' NavigateUrl='<%#Eval("Url")%>' CssClass='<%#Eval("description")%>'>
+                                        </asp:HyperLink>
+                                        <asp:Repeater ID="rptLeftSubMenu" runat="server" DataSource='<%#((SiteMapNode) Container.DataItem).ChildNodes %>'>
+                                            <HeaderTemplate>
+                                                <ul>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <li class="leftSub">
+                                                    <asp:HyperLink ID="lnkPage" runat="server" Text='<%#Eval("Title")%>' NavigateUrl='<%#Eval("Url")%>'>
+                                                    </asp:HyperLink>
+                                                </li>
+                                            </ItemTemplate>
+                                            <FooterTemplate>
+                                                </ul></FooterTemplate>
+                                        </asp:Repeater>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ItemTemplate>
+                        <FooterTemplate>
+                            </ul></FooterTemplate>
+                    </asp:Repeater>
+                    <asp:SiteMapDataSource ID="smdsAdminMenu" runat="server" SiteMapProvider="AdminXmlSiteMapProvider" />
+                </div>
+            </div>
+            <!-- Left Panel End -->
+            <!-- Content Panel Start -->
+            <div class="floatLeft middlePanel">
+                <CMS:Panel ID="pnlMsgCenter" runat="server" SkinID="pnlBorder" Visible="false">
+                    <div id="divMessageCenter" class="messagecenter_panel" runat="server">
+                    </div>
+                </CMS:Panel>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- Content Panel End -->
+        <div class="clearBoth">
+        </div>
+        <!-- Content End -->
+        <!-- Footer Start -->
+        <div id="footer">
+            <div class="innerWrap">
+            </div>
+        </div>
+        <!-- Footer End -->
+        <asp:Literal ID="litAnalytics" runat="server" EnableViewState="false" />
+        </form>
+    </div>
+</body>
+</html>

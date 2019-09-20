@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/URLRewriter/Config
+END
+RewriterConfiguration.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/URLRewriter/Config/RewriterConfiguration.cs
+END
+RewriterRule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/URLRewriter/Config/RewriterRule.cs
+END
+RewriterConfigSerializerSectionHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/URLRewriter/Config/RewriterConfigSerializerSectionHandler.cs
+END
+RewriterRuleCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/URLRewriter/Config/RewriterRuleCollection.cs
+END

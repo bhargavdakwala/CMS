@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="SubSonicService" type="SubSonic.SubSonicSection, SubSonic" allowDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="false"/>
+  </configSections>
+  <connectionStrings>
+    <clear/>
+    <add name="CMS" connectionString="Server=.\SQLEXPRESS;Initial Catalog=dC;user id=IUSER; Password=IUSER;" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+  <SubSonicService defaultProvider="CMSProvider">
+    <providers>
+      <clear/>
+      <!-- App_Code\Models\Store\Generated -->
+      <add name="CMSProvider" type="SubSonic.SqlDataProvider, SubSonic" connectionStringName="CMS" generatedNamespace="Etech.CMS.Content" fixPluralClassName="true" stripTableText="CMS_Content_" includeTableList="CMS_Content_Page
+                            ,CMS_Content_Page_Region_Map
+                            ,CMS_Content_Provider
+                            ,CMS_Content_Region
+                            ,CMS_Content_Template
+                            ,CMS_Content_Template_TemplateRegion_Map
+                            ,CMS_Content_TemplateRegion
+                            ,CMS_Content_SimpleHtml
+                            ,CMS_Content_CustomizedProductDisplay
+                            
+           " stripSPText="CMS_Content_" includeProcedureList="CMS_Content_FetchRegionsByPageId
+                                ,CMS_Content_FetchTemplateRegionsByTemplateId
+                                ,CMS_Content_JoinRegionToPage
+                                ,CMS_Content_FetchRegionsByPageIdAndTemplateRegionId
+           "/>
+    </providers>
+  </SubSonicService>
+<startup><supportedRuntime version="v2.0.50727"/></startup></configuration>

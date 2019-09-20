@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc
+END
+UpdateRecurringPaymentsProfileResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/UpdateRecurringPaymentsProfileResponseType.datasource
+END
+BMManageButtonStatusResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMManageButtonStatusResponseType.datasource
+END
+GetRecurringPaymentsProfileDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetRecurringPaymentsProfileDetailsResponseType.datasource
+END
+SetAccessPermissionsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/SetAccessPermissionsResponseType.datasource
+END
+DoReauthorizationResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoReauthorizationResponseType.datasource
+END
+GetMobileStatusResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetMobileStatusResponseType.datasource
+END
+BMGetInventoryResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMGetInventoryResponseType.datasource
+END
+DoUATPAuthorizationResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoUATPAuthorizationResponseType.datasource
+END
+MassPayResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/MassPayResponseType.datasource
+END
+BMCreateButtonResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMCreateButtonResponseType.datasource
+END
+BillUserResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BillUserResponseType.datasource
+END
+EnterBoardingResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/EnterBoardingResponseType.datasource
+END
+CoreComponentTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/CoreComponentTypes.xsd
+END
+DoCaptureResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoCaptureResponseType.datasource
+END
+BillOutstandingAmountResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BillOutstandingAmountResponseType.datasource
+END
+eBLBaseComponents.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/eBLBaseComponents.xsd
+END
+DoReferenceTransactionResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoReferenceTransactionResponseType.datasource
+END
+BMSetInventoryResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMSetInventoryResponseType.datasource
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/Reference.cs
+END
+CreateMobilePaymentResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/CreateMobilePaymentResponseType.datasource
+END
+RefundTransactionResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/RefundTransactionResponseType.datasource
+END
+DoNonReferencedCreditResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoNonReferencedCreditResponseType.datasource
+END
+CreateBillingAgreementResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/CreateBillingAgreementResponseType.datasource
+END
+BMUpdateButtonResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMUpdateButtonResponseType.datasource
+END
+DoExpressCheckoutPaymentResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoExpressCheckoutPaymentResponseType.datasource
+END
+Reference.map
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/Reference.map
+END
+SetCustomerBillingAgreementResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/SetCustomerBillingAgreementResponseType.datasource
+END
+GetAuthDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetAuthDetailsResponseType.datasource
+END
+ManagePendingTransactionStatusResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/ManagePendingTransactionStatusResponseType.datasource
+END
+SetMobileCheckoutResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/SetMobileCheckoutResponseType.datasource
+END
+AddressVerifyResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/AddressVerifyResponseType.datasource
+END
+TransactionSearchResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/TransactionSearchResponseType.datasource
+END
+DoMobileCheckoutPaymentResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoMobileCheckoutPaymentResponseType.datasource
+END
+ManageRecurringPaymentsProfileStatusResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/ManageRecurringPaymentsProfileStatusResponseType.datasource
+END
+GetAccessPermissionDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetAccessPermissionDetailsResponseType.datasource
+END
+BMButtonSearchResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMButtonSearchResponseType.datasource
+END
+GetPalDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetPalDetailsResponseType.datasource
+END
+DoAuthorizationResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoAuthorizationResponseType.datasource
+END
+DoVoidResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoVoidResponseType.datasource
+END
+GetBalanceResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetBalanceResponseType.datasource
+END
+BAUpdateResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BAUpdateResponseType.datasource
+END
+GetExpressCheckoutDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetExpressCheckoutDetailsResponseType.datasource
+END
+CreateRecurringPaymentsProfileResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/CreateRecurringPaymentsProfileResponseType.datasource
+END
+SetAuthFlowParamResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/SetAuthFlowParamResponseType.datasource
+END
+DoUATPExpressCheckoutPaymentResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoUATPExpressCheckoutPaymentResponseType.datasource
+END
+GetBoardingDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetBoardingDetailsResponseType.datasource
+END
+DoDirectPaymentResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/DoDirectPaymentResponseType.datasource
+END
+GetTransactionDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetTransactionDetailsResponseType.datasource
+END
+SetExpressCheckoutResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/SetExpressCheckoutResponseType.datasource
+END
+GetBillingAgreementCustomerDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/GetBillingAgreementCustomerDetailsResponseType.datasource
+END
+BMGetButtonDetailsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/BMGetButtonDetailsResponseType.datasource
+END
+PayPalSvc.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/PayPalSvc.wsdl
+END
+UpdateAccessPermissionsResponseType.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Web%20References/PayPalSvc/UpdateAccessPermissionsResponseType.datasource
+END

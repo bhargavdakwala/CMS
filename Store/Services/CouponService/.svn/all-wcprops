@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/CouponService
+END
+CouponService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/CouponService/CouponService.cs
+END
+ICouponProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/CouponService/ICouponProvider.cs
+END
+PercentOffCouponProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/CouponService/PercentOffCouponProvider.cs
+END

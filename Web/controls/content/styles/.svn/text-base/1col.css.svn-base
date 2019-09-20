@@ -1,0 +1,6 @@
+#MainContent {
+  	width: 958px;
+	margin:auto;
+	
+	/*border:1px solid red;*/
+}

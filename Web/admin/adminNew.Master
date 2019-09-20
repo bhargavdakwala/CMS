@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminNew.master.cs" Inherits="Etech.CMS.Web.admin.adminNew" %>
+
+<%@ Register TagPrefix="CMS" TagName="AnonymousUser" Src="~/controls/authentication/anonymoususer.ascx" %>
+<%@ Register TagPrefix="CMS" TagName="AuthenticatedUser" Src="~/controls/authentication/authenticateduser.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+  <link rel="shortcut icon"  href="../images/mtmphysio.ico" />
+  <link rel="stylesheet" type="text/css" href="../resources/submodal/subModal.css" />
+  <script type="text/javascript" src="../resources/submodal/common.js"></script>
+  <script type="text/javascript" src="../resources/submodal/subModal.js"></script>
+  <script type="text/javascript" src="../resources/overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>  
+  <title></title>
+</head>
+<body>
+
+<form id="form1" runat="server">
+      <asp:scriptmanager ID="scriptManager" runat="server" EnablePartialRendering="true" />
+<div id="wrap">
+	
+     <div class="Container">
+        	
+                    <div class="floatLeft">
+                          <asp:LoginView ID="loginView" runat="server">
+                            <AnonymousTemplate>
+                              <CMS:AnonymousUser id="dcAnonymousUser" runat="server" />
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                              <CMS:AuthenticatedUser id="dcAuthenticatedUser" runat="server" />
+                            </LoggedInTemplate>
+                          </asp:LoginView>
+                        </div>
+                        <div class="toplinks floatRight"  >
+                        <div class="toplinksLeft floatLeft"></div>
+                        
+                        <div class="toplinksCenterbg floatLeft">
+                            <div class="contactusIcon floatLeft">+0411 44 9590</div>
+                            <a href="#" class="socialMediaFacebook floatLeft" title="facebook"></a>
+                            <a href="#" class="socialMediaTwitter floatLeft" title="Twitter"></a>
+                            <a href="#" class="WebMail floatLeft" title="Web Mail">Web Mail</a>
+                        </div>
+                        <div class="toplinksRight floatLeft"></div>
+                     </div>
+                        
+                <a href="index.html" class="iSTlogo clearBoth floatLeft" title="iSolutions Technology"></a>
+                    <div class="Punchline floatLeft"></div>
+                    
+            
+    		 <div class="mainMenu">
+              <asp:Menu ID="adminMenu" runat="server" CssClass="adminMenu" Orientation="Horizontal" DataSourceID="smdsAdminMenu" StaticDisplayLevels="2" SkinID="menu" OnMenuItemDataBound="OnMenuItemDataBound">
+                <DynamicMenuStyle CssClass="dynamicMenuStyle" />
+
+                <LevelMenuItemStyles>
+                  <asp:MenuItemStyle CssClass="level1" />
+                  <asp:MenuItemStyle CssClass="level2" />
+                  <asp:MenuItemStyle CssClass="level3" />
+                  <asp:MenuItemStyle CssClass="level4" />
+               </LevelMenuItemStyles>
+              </asp:Menu>
+              <asp:SiteMapDataSource ID="smdsAdminMenu" runat="server" SiteMapProvider="AdminXmlSiteMapProvider" />
+              </div>
+                 
+            
+             <div class="floatLeft messageCenter">
+             
+               <div id="message_centercontent">
+                    <div id="divMessageCenter" runat="server"></div>
+                    </div>
+             </div>
+
+             <div id="content" class="clearBoth">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+             </div>
+         <div class="clearBoth"></div> 
+    </div>
+    
+    
+    <div class="floatLeft footer" >
+    	
+    	<div class="footerContainer">
+        	<div class="footerContainerTop">
+            
+            	&nbsp;
+            
+            </div>
+        	<div class="footerContainerBg floatLeft">
+            
+            	<div class=" floatLeft footerContainerDiv">
+                	<p>&nbsp;</p>
+               </div>
+               
+               <div class=" floatLeft footerContainerDiv">
+                	
+                  
+                    
+               </div>
+               
+               
+               
+               <div class=" floatLeft footerContainerDiv">
+                	<p>+61 0 8888 0000</p>
+                    <div class="ContactUsNow floatLeft"><h1 class="Black">Contact Us NOW!</h1></div>
+               </div>
+               
+           </div>
+           
+           
+        	<div class="footerContainerBottom floatLeft"></div> 
+        
+                <div class="floatLeft footerMenu">
+                
+                <!--<ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                 </ul>-->
+                
+                </div>
+                
+                <div class="floatRight White Copyright">© Copyright 2008. iSolutions Technology.  All Rights Reserved.</div>
+        
+       		 </div>
+    
+    </div>
+    
+    
+</div>
+<asp:Literal ID="litAnalytics" runat="server" EnableViewState="false" />
+</form>
+</body>
+</html>

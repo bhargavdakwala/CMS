@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models
+END
+Order.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Order.cs
+END
+Product.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Product.cs
+END
+AttributeItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/AttributeItem.cs
+END
+AssociatedAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/AssociatedAttribute.cs
+END
+Attribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Attribute.cs
+END
+Address.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Address.cs
+END
+PayPalPayer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/PayPalPayer.cs
+END
+Currency.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Currency.cs
+END
+OrderItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/OrderItem.cs
+END

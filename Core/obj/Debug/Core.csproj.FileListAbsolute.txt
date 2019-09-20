@@ -1,0 +1,10 @@
+E:\CMS Project\AHSCAWA\Core\bin\Debug\Etech.CMS.Core.dll.config
+E:\CMS Project\AHSCAWA\Core\bin\Debug\Etech.CMS.Core.dll
+E:\CMS Project\AHSCAWA\Core\bin\Debug\Etech.CMS.Core.pdb
+E:\CMS Project\AHSCAWA\Core\bin\Debug\SubSonic.dll
+E:\CMS Project\AHSCAWA\Core\obj\Debug\ResolveAssemblyReference.cache
+E:\CMS Project\AHSCAWA\Core\obj\Debug\Etech.CMS.Core.Properties.Resources.resources
+E:\CMS Project\AHSCAWA\Core\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\CMS Project\AHSCAWA\Core\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\CMS Project\AHSCAWA\Core\obj\Debug\Etech.CMS.Core.dll
+E:\CMS Project\AHSCAWA\Core\obj\Debug\Etech.CMS.Core.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Etech.CMS.Store.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Etech_CMS_Store_PayPalSvc_PayPalAPIInterfaceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://api.sandbox.paypal.com/2.0/</Value>
+    </Setting>
+    <Setting Name="Etech_CMS_Store_CMSTaxSvc_TaxBasic" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.CMS.com/tax/taxbasic.asmx</Value>
+    </Setting>
+    <Setting Name="Etech_CMS_Store_dashCommerceTaxSvc_TaxBasic" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.CMS.com/tax/taxbasic.asmx</Value>
+    </Setting>
+    <Setting Name="MettleSystems_dashCommerce_Store_dashCommerceTaxSvc_TaxBasic" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.CMS.com/tax/taxbasic.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

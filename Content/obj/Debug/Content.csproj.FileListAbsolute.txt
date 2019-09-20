@@ -1,0 +1,9 @@
+E:\CMS Project\AHSCAWA\Content\bin\Debug\Etech.CMS.Content.dll.config
+E:\CMS Project\AHSCAWA\Content\bin\Debug\Etech.CMS.Content.dll
+E:\CMS Project\AHSCAWA\Content\bin\Debug\Etech.CMS.Content.pdb
+E:\CMS Project\AHSCAWA\Content\bin\Debug\Etech.CMS.Core.dll
+E:\CMS Project\AHSCAWA\Content\bin\Debug\SubSonic.dll
+E:\CMS Project\AHSCAWA\Content\bin\Debug\Etech.CMS.Core.pdb
+E:\CMS Project\AHSCAWA\Content\obj\Debug\ResolveAssemblyReference.cache
+E:\CMS Project\AHSCAWA\Content\obj\Debug\Etech.CMS.Content.dll
+E:\CMS Project\AHSCAWA\Content\obj\Debug\Etech.CMS.Content.pdb

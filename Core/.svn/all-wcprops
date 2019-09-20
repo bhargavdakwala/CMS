@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/CMS/!svn/ver/442/AHSCAWA/Core
+END
+CoreUtility.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/CoreUtility.cs
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Logger.cs
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/App.config
+END
+ImageProcess.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/CMS/!svn/ver/442/AHSCAWA/Core/ImageProcess.cs
+END
+Core.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Core.csproj
+END
+Validator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Validator.cs
+END
+SiteSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/SiteSettings.cs
+END
+PublicResources.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/PublicResources.cs
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/CMS/!svn/ver/409/AHSCAWA/Web/controls/authentication
+END
+authenticateduser.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/authenticateduser.ascx.designer.cs
+END
+authenticateduser.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/authenticateduser.ascx.cs
+END
+UserControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/UserControl.cs
+END
+anonymoususer.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/anonymoususer.ascx
+END
+adminAuthentication.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CMS/!svn/ver/409/AHSCAWA/Web/controls/authentication/adminAuthentication.ascx
+END
+anonymoususer.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/anonymoususer.ascx.designer.cs
+END
+adminAuthentication.ascx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/409/AHSCAWA/Web/controls/authentication/adminAuthentication.ascx.designer.cs
+END
+anonymoususer.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/anonymoususer.ascx.cs
+END
+adminAuthentication.ascx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CMS/!svn/ver/409/AHSCAWA/Web/controls/authentication/adminAuthentication.ascx.cs
+END
+authenticateduser.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/controls/authentication/authenticateduser.ascx
+END

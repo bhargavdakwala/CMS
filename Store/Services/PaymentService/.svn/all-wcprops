@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService
+END
+PaymentServiceException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PaymentServiceException.cs
+END
+PaymentService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PaymentService.cs
+END
+PaymentServiceSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PaymentServiceSettings.cs
+END
+PayPalProPaymentProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPalProPaymentProvider.cs
+END
+PayPalStandardPaymentProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPalStandardPaymentProvider.cs
+END
+IPaymentProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/IPaymentProvider.cs
+END
+NullPaymentProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/NullPaymentProvider.cs
+END
+PaymentProviderCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PaymentProviderCollection.cs
+END
+IPayPalPaymentProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/IPayPalPaymentProvider.cs
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/wsgi.py
+END
+connector.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/connector.py
+END
+zope.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/zope.py
+END
+fckconnector.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/fckconnector.py
+END
+fckutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/fckutil.py
+END
+fckoutput.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/fckoutput.py
+END
+htaccess.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/htaccess.txt
+END
+upload.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/upload.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/config.py
+END
+fckcommands.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/fckeditor/editor/filemanager/connectors/py/fckcommands.py
+END

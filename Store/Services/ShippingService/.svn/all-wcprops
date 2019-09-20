@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService
+END
+SimpleWeightShippingProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/SimpleWeightShippingProvider.cs
+END
+ShippingService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/ShippingService.cs
+END
+ShippingServiceSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/ShippingServiceSettings.cs
+END
+IShippingProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/IShippingProvider.cs
+END
+ShippingOptionCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/ShippingOptionCollection.cs
+END
+ShippingProviderCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/ShippingProviderCollection.cs
+END
+ShippingOption.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/ShippingService/ShippingOption.cs
+END

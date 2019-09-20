@@ -1,0 +1,146 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Drawing;
+using System.Web.Services;
+using System.Web.Mail;
+using System.Text;
+using System.Text.RegularExpressions;
+using Etech.CMS.Content;
+using Etech.CMS.Store;
+using Etech.CMS.Store.Caching;
+using Etech.CMS.Store.Services.MessageService;
+
+namespace Etech.CMS.Web.controls.content
+{
+    public partial class InnerMailingList : ProviderControl
+    {
+        string subscriber = string.Empty;
+
+        #region Event
+
+        #region Page_Load
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion Page_Load
+
+        #endregion Event
+
+        #region Button
+
+        protected void lnkSubmit_Click(object sender, EventArgs e)
+        {
+            MailMessage mail = new MailMessage();
+
+            //mail.To = "Manan.Gajjar@etechinc.com";
+            //mail.From = "Manan.Gajjar@etechinc.com";
+
+
+            mail.To = "contact@ahscawa.com.au";
+            mail.From = txtemailAddress.Text.Trim();
+
+
+            if (chkSubscriber.Checked == true)
+            {
+                subscriber = "Yes";
+            }
+            else
+            {
+                subscriber = "No";
+            }
+
+
+            mail.Subject = "Mailing List";
+            mail.Priority = MailPriority.High;
+            mail.BodyFormat = MailFormat.Html;
+
+            mail.Body = "<font style='color:blue; font-family: Verdana; font-size: 12;'>Hello, <br><br></font>" +
+                   "<font style='color:blue; font-family: Verdana; font-size: 12;'>The following entry has been submitted by </font><font style=color:blue; face=Verdana size=2><b>" + txtname.Text.Trim() + "</b></font><br><br>" +
+                   "<table>" +
+                   "<tr><td colspan=4><font style=color:blue; face=Verdana size=2><b>Name:</b></font></td><td><font style=color:blue; face=Verdana size=2>" + txtname.Text.Trim() + "</font></td></tr>" +
+                   "<tr><td colspan=4><font style=color:blue; face=Verdana size=2><b>Email:</b></font></td><td><font style=color:blue; face=Verdana size=2>" + txtemailAddress.Text.Trim() + "</font></td></tr>" +
+                   "<tr><td colspan=4><font style=color:blue; face=Verdana size=2><b>Select Member Status:</b></font></td><td><font style=color:blue; face=Verdana size=2>" + ddlMemberStatus.SelectedItem.Value + "</font></td></tr>" +
+                    "<tr><td colspan=4><font style=color:blue; face=Verdana size=2><b>Subscribe to Mailing List:</b></font></td><td><font style=color:blue; face=Verdana size=2>" + subscriber + "</font></td></tr>" +
+                   "</table><BR>";
+            //SmtpMail.SmtpServer = "27.54.85.33";
+            //SmtpMail.SmtpServer = "27.54.84.168";
+            SmtpMail.SmtpServer = "localhost";
+            //SmtpMail.SmtpServer = "NACET1MAIL03.effectiveteleservices.local";
+            try
+            {
+                SmtpMail.Send(mail);
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Message", "alert('Contact submitted successfully');", true);
+                trMessage.Visible = true;
+                if (Page.IsValid)
+                {
+                    SaveContectUs();
+                }
+                Reset();
+                txtname.Text = "Name";
+                txtemailAddress.Text = "Email Address";
+                ddlMemberStatus.SelectedIndex = 0;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        #endregion Button
+
+        #region Method
+        private void Reset()
+        {
+
+            txtname.Text = string.Empty;
+            txtemailAddress.Text = string.Empty;
+            ddlMemberStatus.SelectedIndex = 0;
+            chkSubscriber.Checked = false;
+
+        }
+
+        private void SaveContectUs()
+        {
+            NewsLetterUser newsLetterUser = new NewsLetterUser();
+            try
+            {
+                newsLetterUser.UserGUID = Guid.NewGuid().ToString();
+                newsLetterUser.UserName = txtname.Text;
+                newsLetterUser.Email = txtemailAddress.Text;
+
+                newsLetterUser.BusinessName = ddlMemberStatus.SelectedItem.Text;
+
+                if (chkSubscriber.Checked == true)
+                {
+                    newsLetterUser.IsNewsLetterSignUp = true;
+                }
+                else
+                {
+                    newsLetterUser.IsNewsLetterSignUp = false;
+                }
+                newsLetterUser.SubscriptionDate = DateTime.Today.Date.ToString();
+                newsLetterUser.GroupID = 1;
+                newsLetterUser.IsActive = true;
+                newsLetterUser.Save(WebUtility.GetUserName());
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+            }
+        }
+        #endregion Method
+
+    }
+}

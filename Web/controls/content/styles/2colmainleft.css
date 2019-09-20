@@ -1,0 +1,55 @@
+/*#MainContent {
+  margin: 0;
+  float: left;
+  width: 610px;
+  border: 1px solid green;
+}
+
+#RightContent {
+  width: 160px;
+  float: right;
+  border: 1px solid blue;
+}
+*/
+
+html {
+	background:#dadada url(../../../images/one-columns-background.png) center top repeat-y !important;	
+}
+
+#MainContent
+{
+	/*margin-top:10px;*/
+	width:634px;
+	float:left;
+	padding:61px 0;
+	/*border:1px sold red;*/
+}
+
+#RightContent 
+{
+	position:relative;
+	float:right;
+	width:260px;
+	padding:61px 27px 61px 30px;
+	/*border:1px sold red;*/
+	
+}
+
+
+
+.box{
+	width:956px;
+	/*background-color:#FFF;*/
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	background:url(../../../images/box-background1.png) left top repeat-y;
+	margin-bottom:63px;
+}
+
+	.box h2 {
+		line-height:18px;
+	}
+	
+	.box p { margin:15px 0;
+
+

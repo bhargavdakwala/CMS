@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts
+END
+Update_dC3.0.1_To_dC3.2RC.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dC3.0.1_To_dC3.2RC.sql
+END
+basedata.it-IT.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/basedata.it-IT.sql
+END
+membership.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/membership.sql
+END
+Update_dC3.2RC_To_dC3.2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dC3.2RC_To_dC3.2.sql
+END
+storedprocedures.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/storedprocedures.sql
+END
+Update_dC3.2_To_dC3.3RC.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dC3.2_To_dC3.3RC.sql
+END
+Update_dC3.3RC_To_dC3.3.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dC3.3RC_To_dC3.3.sql
+END
+views.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/views.sql
+END
+Update_dC3.0_To_dC3.0.1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dC3.0_To_dC3.0.1.sql
+END
+drop.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/drop.sql
+END
+basedata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/basedata.sql
+END
+basedata.pt-PT.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/basedata.pt-PT.sql
+END
+functions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/functions.sql
+END
+Update_dc3.0RC1_To_dC3.0.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dc3.0RC1_To_dC3.0.sql
+END
+Update_dC3.3_To_dC3.4.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/Update_dC3.3_To_dC3.4.sql
+END
+tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/tables.sql
+END
+sampledata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/sampledata.sql
+END
+basemembershipdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CMS/!svn/ver/404/AHSCAWA/Web/install/scripts/basemembershipdata.sql
+END

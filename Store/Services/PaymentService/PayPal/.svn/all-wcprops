@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPal
+END
+PayPalServiceUtility.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPal/PayPalServiceUtility.cs
+END
+PayPalStrings.resx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPal/PayPalStrings.resx
+END
+PayPalStrings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPal/PayPalStrings.Designer.cs
+END
+PayPalServiceException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPal/PayPalServiceException.cs
+END
+PayPalService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Services/PaymentService/PayPal/PayPalService.cs
+END

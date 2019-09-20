@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated
+END
+RegionCodeTaxRateController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/RegionCodeTaxRateController.cs
+END
+DownloadController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/DownloadController.cs
+END
+ProductCategoryMapController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductCategoryMapController.cs
+END
+ShippingEstimateController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ShippingEstimateController.cs
+END
+CategoryController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/CategoryController.cs
+END
+OrderStatusDescriptorController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/OrderStatusDescriptorController.cs
+END
+DescriptorController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/DescriptorController.cs
+END
+ProductTypeController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductTypeController.cs
+END
+ImageController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ImageController.cs
+END
+ProductStatusDescriptorController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductStatusDescriptorController.cs
+END
+VatTaxRateController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/VatTaxRateController.cs
+END
+TransactionController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/TransactionController.cs
+END
+VersionController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/VersionController.cs
+END
+NotificationController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/NotificationController.cs
+END
+OrderItemController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/OrderItemController.cs
+END
+CurrencyController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/CurrencyController.cs
+END
+ProviderController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProviderController.cs
+END
+BrowsingLogController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/BrowsingLogController.cs
+END
+ManufacturerController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ManufacturerController.cs
+END
+ReviewController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ReviewController.cs
+END
+ProductAttributeMapController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductAttributeMapController.cs
+END
+CouponController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/CouponController.cs
+END
+AttributeTypeController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/AttributeTypeController.cs
+END
+CrossSellController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/CrossSellController.cs
+END
+OrderController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/OrderController.cs
+END
+CustomizedProductDisplayTypeProductMapController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/CustomizedProductDisplayTypeProductMapController.cs
+END
+SimpleWeightShippingRateController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/SimpleWeightShippingRateController.cs
+END
+CustomizedProductDisplayTypeController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/CustomizedProductDisplayTypeController.cs
+END
+ProductController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductController.cs
+END
+AttributeItemController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/AttributeItemController.cs
+END
+ProductRatingController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductRatingController.cs
+END
+TransactionTypeDescriptorController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/TransactionTypeDescriptorController.cs
+END
+DownloadAccessControlController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/DownloadAccessControlController.cs
+END
+OrderNoteController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/OrderNoteController.cs
+END
+SkuController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/SkuController.cs
+END
+AttributeController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/AttributeController.cs
+END
+ToDoController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ToDoController.cs
+END
+ProductDownloadMapController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Controllers/Generated/ProductDownloadMapController.cs
+END

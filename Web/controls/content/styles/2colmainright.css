@@ -1,0 +1,27 @@
+
+
+#MainContent, #ContentWrap
+{
+	position:relative;
+	float:right;
+	width:721px;
+	background-color:#F8F8F8;
+	border-radius: 0px 0px 20px 20px;
+	behavior: url('PIE.htc');
+	padding-bottom:25px;
+	margin-bottom:25px;
+}
+
+
+
+
+#LeftContent, #LeftWrap
+{
+	position:relative;
+	float:left;
+	width:221px;
+	z-index:9999;
+	
+}
+	
+	

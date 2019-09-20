@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Caching/Providers
+END
+NullCache.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Caching/Providers/NullCache.cs
+END
+HttpRuntimeCache.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Caching/Providers/HttpRuntimeCache.cs
+END
+ICacheProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CMS/!svn/ver/404/AHSCAWA/Core/Caching/Providers/ICacheProvider.cs
+END

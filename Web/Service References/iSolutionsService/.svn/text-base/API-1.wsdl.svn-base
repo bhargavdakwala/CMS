@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://soap-test.secureapi.com.au/API-1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:impl="http://soap-test.secureapi.com.au/API-1.0" xmlns:xsd1="http://soap-test.secureapi.com.au/API-1.0" name="API-1.0" targetNamespace="http://soap-test.secureapi.com.au/API-1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soap-test.secureapi.com.au/API-1.0">
+      <xsd:complexType name="AuthenticateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="ResellerID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AuthenticateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="APIResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIRequestDate" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponseDate" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AvailabilityList" type="xsd1:ArrayOfAvailabilityItem" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Balance" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ContactDetails" type="xsd1:ContactDetails" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DomainDetails" type="xsd1:DomainDetails" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DomainList" type="xsd1:ArrayOfDomainListItem" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Errors" type="xsd1:ArrayOfError" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="HostDetails" type="xsd1:HostDetails" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="SpawnedTransferList" type="xsd1:ArrayOfSpawnedTransferListItem" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Success" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TransferDetails" type="xsd1:TransferDetails" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAvailabilityItem">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd1:AvailabilityItem[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="AvailabilityItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Item" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Available" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactDetails">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="ContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="FirstName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="LastName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="City" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Country" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="State" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PostCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="CountryCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Phone" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Mobile" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Email" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AccountType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessNumberType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessNumber" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainDetails">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AuthKey" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Status" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="LockStatus" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Expiry" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="RegistrantContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AdminContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BillingContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="TechContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="NameServers" type="xsd1:ArrayOfNameServer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Eligibility" type="xsd1:Eligibility" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfNameServer">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd1:NameServer[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="NameServer">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Host" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="IP" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Eligibility">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="PolicyReason" type="xsd:int" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BusinessType" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BusinessName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BusinessNumberType" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BusinessNumber" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TradingName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TradingNumberType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TradingNumber" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfDomainListItem">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd1:DomainListItem[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="DomainListItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Status" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfError">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd1:Error[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Error">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Item" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Message" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostDetails">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Host" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="IP" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfSpawnedTransferListItem">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd1:SpawnedTransferListItem[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="SpawnedTransferListItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AuthKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferDetails">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Status" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="GetBalanceResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="GetDomainListResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactCheckRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="ContactIdentifier" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactCheckResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactInfoRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="ContactIdentifier" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactInfoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactCreateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="FirstName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="LastName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="City" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Country" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="State" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PostCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="CountryCode" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Phone" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Mobile" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Email" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AccountType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessNumberType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessNumber" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactCreateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactUpdateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="ContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="FirstName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="LastName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Address" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="City" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Country" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="State" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PostCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="CountryCode" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Phone" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Mobile" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Email" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AccountType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessNumberType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BusinessNumber" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactUpdateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactCloneToRegistrantRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="ContactIdentifier" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ContactCloneToRegistrantResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainCheckRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainNames" type="xsd1:ArrayOfstring" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfstring">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:string[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="DomainCheckResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainInfoRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainInfoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainCreateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="RegistrantContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AdminContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BillingContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="TechContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="RegistrationPeriod" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NameServers" type="xsd1:ArrayOfNameServer" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Eligibility" type="xsd1:Eligibility" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainCreateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainUpdateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="AdminContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="BillingContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="TechContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NameServers" type="xsd1:ArrayOfNameServer" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainUpdateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainDeleteRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainDeleteResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainRenewRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="RenewalPeriod" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DomainRenewResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostInfoRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Host" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostInfoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostCreateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Host" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="IP" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostCreateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostUpdateRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Host" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="OldIP" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="NewIP" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostUpdateResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostDeleteRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Host" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="HostDeleteResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferCheckRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AuthKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferCheckResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferInfoRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AuthKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferInfoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferStartRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="ContactIdentifier" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AuthKey" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RenewalPeriod" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferStartResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferCancelRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AuthKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransferCancelResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SendAPINotificationRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="DomainName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Action" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="URL" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SendAPINotificationResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SpawnDomainsForTransferResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="APIResponse" type="xsd1:APIResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AuthenticateRequest">
+    <wsdl:part name="AuthenticateRequest" type="xsd1:AuthenticateRequest" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateResponse">
+    <wsdl:part name="return" type="xsd1:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceRequest" />
+  <wsdl:message name="GetBalanceResponse">
+    <wsdl:part name="return" type="xsd1:GetBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainListRequest" />
+  <wsdl:message name="GetDomainListResponse">
+    <wsdl:part name="return" type="xsd1:GetDomainListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactCheckRequest">
+    <wsdl:part name="ContactCheckRequest" type="xsd1:ContactCheckRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContactCheckResponse">
+    <wsdl:part name="return" type="xsd1:ContactCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactInfoRequest">
+    <wsdl:part name="ContactInfoRequest" type="xsd1:ContactInfoRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContactInfoResponse">
+    <wsdl:part name="return" type="xsd1:ContactInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactCreateRequest">
+    <wsdl:part name="ContactCreateRequest" type="xsd1:ContactCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContactCreateResponse">
+    <wsdl:part name="return" type="xsd1:ContactCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactUpdateRequest">
+    <wsdl:part name="ContactUpdateRequest" type="xsd1:ContactUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContactUpdateResponse">
+    <wsdl:part name="return" type="xsd1:ContactUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactCloneToRegistrantRequest">
+    <wsdl:part name="ContactCloneToRegistrantRequest" type="xsd1:ContactCloneToRegistrantRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContactCloneToRegistrantResponse">
+    <wsdl:part name="return" type="xsd1:ContactCloneToRegistrantResponse" />
+  </wsdl:message>
+  <wsdl:message name="DomainCheckRequest">
+    <wsdl:part name="DomainCheckRequest" type="xsd1:DomainCheckRequest" />
+  </wsdl:message>
+  <wsdl:message name="DomainCheckResponse">
+    <wsdl:part name="return" type="xsd1:DomainCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="DomainInfoRequest">
+    <wsdl:part name="DomainInfoRequest" type="xsd1:DomainInfoRequest" />
+  </wsdl:message>
+  <wsdl:message name="DomainInfoResponse">
+    <wsdl:part name="return" type="xsd1:DomainInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DomainCreateRequest">
+    <wsdl:part name="DomainCreateRequest" type="xsd1:DomainCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="DomainCreateResponse">
+    <wsdl:part name="return" type="xsd1:DomainCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DomainUpdateRequest">
+    <wsdl:part name="DomainUpdateRequest" type="xsd1:DomainUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="DomainUpdateResponse">
+    <wsdl:part name="return" type="xsd1:DomainUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DomainDeleteRequest">
+    <wsdl:part name="DomainDeleteRequest" type="xsd1:DomainDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="DomainDeleteResponse">
+    <wsdl:part name="return" type="xsd1:DomainDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DomainRenewRequest">
+    <wsdl:part name="DomainRenewRequest" type="xsd1:DomainRenewRequest" />
+  </wsdl:message>
+  <wsdl:message name="DomainRenewResponse">
+    <wsdl:part name="return" type="xsd1:DomainRenewResponse" />
+  </wsdl:message>
+  <wsdl:message name="HostInfoRequest">
+    <wsdl:part name="HostInfoRequest" type="xsd1:HostInfoRequest" />
+  </wsdl:message>
+  <wsdl:message name="HostInfoResponse">
+    <wsdl:part name="return" type="xsd1:HostInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="HostCreateRequest">
+    <wsdl:part name="HostCreateRequest" type="xsd1:HostCreateRequest" />
+  </wsdl:message>
+  <wsdl:message name="HostCreateResponse">
+    <wsdl:part name="return" type="xsd1:HostCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="HostUpdateRequest">
+    <wsdl:part name="HostUpdateRequest" type="xsd1:HostUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="HostUpdateResponse">
+    <wsdl:part name="return" type="xsd1:HostUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="HostDeleteRequest">
+    <wsdl:part name="HostDeleteRequest" type="xsd1:HostDeleteRequest" />
+  </wsdl:message>
+  <wsdl:message name="HostDeleteResponse">
+    <wsdl:part name="return" type="xsd1:HostDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferCheckRequest">
+    <wsdl:part name="TransferCheckRequest" type="xsd1:TransferCheckRequest" />
+  </wsdl:message>
+  <wsdl:message name="TransferCheckResponse">
+    <wsdl:part name="return" type="xsd1:TransferCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferInfoRequest">
+    <wsdl:part name="TransferInfoRequest" type="xsd1:TransferInfoRequest" />
+  </wsdl:message>
+  <wsdl:message name="TransferInfoResponse">
+    <wsdl:part name="return" type="xsd1:TransferInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferStartRequest">
+    <wsdl:part name="TransferStartRequest" type="xsd1:TransferStartRequest" />
+  </wsdl:message>
+  <wsdl:message name="TransferStartResponse">
+    <wsdl:part name="return" type="xsd1:TransferStartResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferCancelRequest">
+    <wsdl:part name="TransferCancelRequest" type="xsd1:TransferCancelRequest" />
+  </wsdl:message>
+  <wsdl:message name="TransferCancelResponse">
+    <wsdl:part name="return" type="xsd1:TransferCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendAPINotificationRequest">
+    <wsdl:part name="SendAPINotificationRequest" type="xsd1:SendAPINotificationRequest" />
+  </wsdl:message>
+  <wsdl:message name="SendAPINotificationResponse">
+    <wsdl:part name="return" type="xsd1:SendAPINotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="SpawnDomainsForTransferRequest" />
+  <wsdl:message name="SpawnDomainsForTransferResponse">
+    <wsdl:part name="return" type="xsd1:SpawnDomainsForTransferResponse" />
+  </wsdl:message>
+  <wsdl:portType name="API-1.0PortType">
+    <wsdl:operation name="Authenticate" parameterOrder="AuthenticateRequest">
+      <wsdl:input message="xsd1:AuthenticateRequest" />
+      <wsdl:output message="xsd1:AuthenticateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <wsdl:input message="xsd1:GetBalanceRequest" />
+      <wsdl:output message="xsd1:GetBalanceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainList">
+      <wsdl:input message="xsd1:GetDomainListRequest" />
+      <wsdl:output message="xsd1:GetDomainListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactCheck" parameterOrder="ContactCheckRequest">
+      <wsdl:input message="xsd1:ContactCheckRequest" />
+      <wsdl:output message="xsd1:ContactCheckResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactInfo" parameterOrder="ContactInfoRequest">
+      <wsdl:input message="xsd1:ContactInfoRequest" />
+      <wsdl:output message="xsd1:ContactInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactCreate" parameterOrder="ContactCreateRequest">
+      <wsdl:input message="xsd1:ContactCreateRequest" />
+      <wsdl:output message="xsd1:ContactCreateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactUpdate" parameterOrder="ContactUpdateRequest">
+      <wsdl:input message="xsd1:ContactUpdateRequest" />
+      <wsdl:output message="xsd1:ContactUpdateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactCloneToRegistrant" parameterOrder="ContactCloneToRegistrantRequest">
+      <wsdl:input message="xsd1:ContactCloneToRegistrantRequest" />
+      <wsdl:output message="xsd1:ContactCloneToRegistrantResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainCheck" parameterOrder="DomainCheckRequest">
+      <wsdl:input message="xsd1:DomainCheckRequest" />
+      <wsdl:output message="xsd1:DomainCheckResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainInfo" parameterOrder="DomainInfoRequest">
+      <wsdl:input message="xsd1:DomainInfoRequest" />
+      <wsdl:output message="xsd1:DomainInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainCreate" parameterOrder="DomainCreateRequest">
+      <wsdl:input message="xsd1:DomainCreateRequest" />
+      <wsdl:output message="xsd1:DomainCreateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainUpdate" parameterOrder="DomainUpdateRequest">
+      <wsdl:input message="xsd1:DomainUpdateRequest" />
+      <wsdl:output message="xsd1:DomainUpdateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainDelete" parameterOrder="DomainDeleteRequest">
+      <wsdl:input message="xsd1:DomainDeleteRequest" />
+      <wsdl:output message="xsd1:DomainDeleteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainRenew" parameterOrder="DomainRenewRequest">
+      <wsdl:input message="xsd1:DomainRenewRequest" />
+      <wsdl:output message="xsd1:DomainRenewResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="HostInfo" parameterOrder="HostInfoRequest">
+      <wsdl:input message="xsd1:HostInfoRequest" />
+      <wsdl:output message="xsd1:HostInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="HostCreate" parameterOrder="HostCreateRequest">
+      <wsdl:input message="xsd1:HostCreateRequest" />
+      <wsdl:output message="xsd1:HostCreateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="HostUpdate" parameterOrder="HostUpdateRequest">
+      <wsdl:input message="xsd1:HostUpdateRequest" />
+      <wsdl:output message="xsd1:HostUpdateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="HostDelete" parameterOrder="HostDeleteRequest">
+      <wsdl:input message="xsd1:HostDeleteRequest" />
+      <wsdl:output message="xsd1:HostDeleteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferCheck" parameterOrder="TransferCheckRequest">
+      <wsdl:input message="xsd1:TransferCheckRequest" />
+      <wsdl:output message="xsd1:TransferCheckResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferInfo" parameterOrder="TransferInfoRequest">
+      <wsdl:input message="xsd1:TransferInfoRequest" />
+      <wsdl:output message="xsd1:TransferInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferStart" parameterOrder="TransferStartRequest">
+      <wsdl:input message="xsd1:TransferStartRequest" />
+      <wsdl:output message="xsd1:TransferStartResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferCancel" parameterOrder="TransferCancelRequest">
+      <wsdl:input message="xsd1:TransferCancelRequest" />
+      <wsdl:output message="xsd1:TransferCancelResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAPINotification" parameterOrder="SendAPINotificationRequest">
+      <wsdl:input message="xsd1:SendAPINotificationRequest" />
+      <wsdl:output message="xsd1:SendAPINotificationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SpawnDomainsForTransfer">
+      <wsdl:input message="xsd1:SpawnDomainsForTransferRequest" />
+      <wsdl:output message="xsd1:SpawnDomainsForTransferResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="API-1.0Binding" type="xsd1:API-1.0PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#Authenticate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="AuthenticateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#GetBalance" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainList">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#GetDomainList" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactCheck">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#ContactCheck" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="ContactCheckRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactInfo">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#ContactInfo" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="ContactInfoRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactCreate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#ContactCreate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="ContactCreateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactUpdate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#ContactUpdate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="ContactUpdateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactCloneToRegistrant">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#ContactCloneToRegistrant" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="ContactCloneToRegistrantRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainCheck">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#DomainCheck" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="DomainCheckRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainInfo">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#DomainInfo" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="DomainInfoRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainCreate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#DomainCreate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="DomainCreateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainUpdate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#DomainUpdate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="DomainUpdateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainDelete">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#DomainDelete" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="DomainDeleteRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainRenew">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#DomainRenew" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="DomainRenewRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HostInfo">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#HostInfo" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="HostInfoRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HostCreate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#HostCreate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="HostCreateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HostUpdate">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#HostUpdate" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="HostUpdateRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HostDelete">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#HostDelete" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="HostDeleteRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferCheck">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#TransferCheck" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="TransferCheckRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferInfo">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#TransferInfo" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="TransferInfoRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferStart">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#TransferStart" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="TransferStartRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferCancel">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#TransferCancel" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="TransferCancelRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAPINotification">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#SendAPINotification" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="SendAPINotificationRequest" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpawnDomainsForTransfer">
+      <soap:operation soapAction="urn:API-1.0#API-1.0Server#SpawnDomainsForTransfer" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://soap-test.secureapi.com.au/API-1.0" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="return" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="API-1.0Service">
+    <wsdl:port name="API-1.0Port" binding="xsd1:API-1.0Binding">
+      <soap:address location="http://soap-test.secureapi.com.au/server.php?v=1.0" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

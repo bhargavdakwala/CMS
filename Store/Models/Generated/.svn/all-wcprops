@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated
+END
+Order.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Order.cs
+END
+CustomizedProductDisplayTypeProductMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/CustomizedProductDisplayTypeProductMap.cs
+END
+SimpleWeightShippingRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/SimpleWeightShippingRate.cs
+END
+CustomizedProductDisplayType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/CustomizedProductDisplayType.cs
+END
+Product.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Product.cs
+END
+AttributeItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/AttributeItem.cs
+END
+ProductRating.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ProductRating.cs
+END
+TransactionTypeDescriptor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/TransactionTypeDescriptor.cs
+END
+DownloadAccessControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/DownloadAccessControl.cs
+END
+OrderNote.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/OrderNote.cs
+END
+Sku.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Sku.cs
+END
+Attribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Attribute.cs
+END
+ToDo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ToDo.cs
+END
+ProductDownloadMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ProductDownloadMap.cs
+END
+RegionCodeTaxRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/RegionCodeTaxRate.cs
+END
+Download.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Download.cs
+END
+ProductCategoryMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ProductCategoryMap.cs
+END
+ShippingEstimate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ShippingEstimate.cs
+END
+Category.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Category.cs
+END
+OrderStatusDescriptor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/OrderStatusDescriptor.cs
+END
+Descriptor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Descriptor.cs
+END
+ProductType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ProductType.cs
+END
+Image.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Image.cs
+END
+ProductStatusDescriptor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ProductStatusDescriptor.cs
+END
+VatTaxRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/VatTaxRate.cs
+END
+Transaction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Transaction.cs
+END
+Version.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Version.cs
+END
+Notification.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Notification.cs
+END
+Provider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Provider.cs
+END
+OrderItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/OrderItem.cs
+END
+Currency.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Currency.cs
+END
+BrowsingLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/BrowsingLog.cs
+END
+Manufacturer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Manufacturer.cs
+END
+StoredProcedures.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/StoredProcedures.cs
+END
+Review.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Review.cs
+END
+ProductAttributeMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/ProductAttributeMap.cs
+END
+Coupon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/Coupon.cs
+END
+AttributeType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/AttributeType.cs
+END
+CrossSell.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CMS/!svn/ver/404/AHSCAWA/Store/Models/Generated/CrossSell.cs
+END
